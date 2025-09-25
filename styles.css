@@ -45,7 +45,6 @@ body {
     visibility: hidden;
     overflow: hidden;
     z-index: 1;
-    transition: visibility 0.5s;
 }
 
 .screen.active {
@@ -102,7 +101,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }

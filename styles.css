@@ -37,24 +37,25 @@ body {
 
 /* Screen Management */
 .screen {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    opacity: 0;
     visibility: hidden;
-    transform: translateY(30px);
-    transition: var(--transition);
+    overflow: hidden;
     z-index: 1;
-    overflow-y: auto; /* Allow vertical scrolling on screens */
+    transition: visibility 0.5s;
+    overflow-y: auto; /* Allow vertical scrolling on screens
 }
 
 .screen.active {
-    opacity: 1;
     visibility: visible;
-    transform: translateY(0);
     z-index: 10;
+}
+
+.screen.animate__animated {
+    animation-duration: 0.5s;
 }
 
 /* Loading Screen */
@@ -366,11 +367,13 @@ body {
 .answer-option.correct {
     border-color: var(--success-color);
     background: #f0f9ff;
+    animation: tada 0.8s ease-out;
 }
 
 .answer-option.incorrect {
     border-color: var(--error-color);
     background: #fff0f3;
+    animation: wobble 0.8s ease-out;
 }
 
 .answer-option .option-letter {

@@ -67,7 +67,7 @@ class TestLab {
             {
                 id: 'matematicas',
                 name: 'Matemáticas',
-                icon: '🔢',
+                icon: 'https://cdn.lordicon.com/veoexymv.json',
                 description: 'Álgebra, geometría y cálculo básico',
                 questions: [
                     {
@@ -93,7 +93,7 @@ class TestLab {
             {
                 id: 'ciencias',
                 name: 'Ciencias',
-                icon: '🧪',
+                icon: 'https://cdn.lordicon.com/zpxybbhl.json',
                 description: 'Física, química y biología',
                 questions: [
                     {
@@ -113,7 +113,7 @@ class TestLab {
             {
                 id: 'historia',
                 name: 'Historia',
-                icon: '🏛️',
+                icon: 'https://cdn.lordicon.com/wzwygmng.json',
                 description: 'Historia universal y nacional',
                 questions: [
                     {
@@ -137,13 +137,20 @@ class TestLab {
         const subjectsGrid = document.getElementById('subjects-grid');
         subjectsGrid.innerHTML = '';
 
-        this.subjects.forEach(subject => {
+        this.subjects.forEach((subject, index) => {
             const subjectCard = document.createElement('div');
-            subjectCard.className = 'subject-card';
+            subjectCard.className = 'subject-card animate__animated animate__bounceIn';
+            subjectCard.style.animationDelay = `${index * 0.1}s`;
             subjectCard.dataset.subjectId = subject.id;
             
             subjectCard.innerHTML = `
-                <span class="subject-icon">${subject.icon}</span>
+                <div class="subject-icon">
+                    <lord-icon
+                        src="${subject.icon}"
+                        trigger="hover"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+                </div>
                 <h3>${subject.name}</h3>
                 <p>${subject.description}</p>
             `;
@@ -187,16 +194,25 @@ class TestLab {
         document.getElementById('restart-test').addEventListener('click', () => {
             this.restartTest();
         });
+
+        // Add button click animations
+        document.querySelectorAll('button, .test-type-card, .subject-card').forEach(element => {
+            element.addEventListener('click', () => {
+                element.classList.add('animate__animated', 'animate__headShake');
+                element.addEventListener('animationend', () => {
+                    element.classList.remove('animate__animated', 'animate__headShake');
+                }, { once: true });
+            });
+        });
     }
 
     showScreen(screenId) {
         document.querySelectorAll('.screen').forEach(screen => {
-            screen.classList.remove('active');
+            screen.classList.remove('active', 'animate__animated', 'animate__fadeIn');
         });
         
-        setTimeout(() => {
-            document.getElementById(screenId).classList.add('active');
-        }, 150);
+        const screen = document.getElementById(screenId);
+        screen.classList.add('active', 'animate__animated', 'animate__fadeIn');
     }
 
     hideScreen(screenId) {
@@ -207,6 +223,13 @@ class TestLab {
         this.currentSubject = this.subjects.find(s => s.id === subjectId);
         if (this.currentSubject) {
             document.getElementById('selected-subject-title').textContent = this.currentSubject.name;
+
+            const testTypeCards = document.querySelectorAll('.test-type-card');
+            testTypeCards.forEach((card, index) => {
+                card.classList.add('animate__animated', 'animate__bounceIn');
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+
             this.showScreen('test-type-screen');
         }
     }
@@ -461,22 +484,35 @@ class TestLab {
         document.getElementById('time-taken').textContent = testDuration;
 
         // Update results icon and title based on performance
-        const resultsIcon = document.getElementById('results-icon');
+        const resultsIconContainer = document.getElementById('results-icon');
         const resultsTitle = document.getElementById('results-title');
+        const resultsContent = document.querySelector('.results-content');
+        resultsContent.classList.remove('success-animation');
 
+        let iconSrc = '';
         if (percentage >= 90) {
-            resultsIcon.textContent = '🏆';
+            iconSrc = 'https://cdn.lordicon.com/trovagwf.json';
             resultsTitle.textContent = '¡Excelente trabajo!';
+            resultsContent.classList.add('success-animation');
         } else if (percentage >= 70) {
-            resultsIcon.textContent = '🎉';
+            iconSrc = 'https://cdn.lordicon.com/soseozvi.json';
             resultsTitle.textContent = '¡Bien hecho!';
         } else if (percentage >= 50) {
-            resultsIcon.textContent = '👍';
+            iconSrc = 'https://cdn.lordicon.com/xyboiuok.json';
             resultsTitle.textContent = '¡Buen intento!';
         } else {
-            resultsIcon.textContent = '📚';
+            iconSrc = 'https://cdn.lordicon.com/wxnxiano.json';
             resultsTitle.textContent = '¡Sigue practicando!';
         }
+
+        resultsIconContainer.innerHTML = `
+            <lord-icon
+                src="${iconSrc}"
+                trigger="loop"
+                delay="1000"
+                style="width:150px;height:150px">
+            </lord-icon>
+        `;
     }
 
     formatTime(milliseconds) {

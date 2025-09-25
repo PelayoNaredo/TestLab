@@ -1,0 +1,55 @@
+{
+    "name": "Ciencias Naturales",
+    "icon": "🧪",
+    "description": "Física, química y biología básica",
+    "questions": [
+        {
+            "question": "¿Cuál es la fórmula química del dióxido de carbono?",
+            "options": ["CO", "CO₂", "C₂O", "O₂C"],
+            "correctAnswer": 1,
+            "explanation": "El dióxido de carbono tiene la fórmula CO₂, que indica un átomo de carbono y dos átomos de oxígeno."
+        },
+        {
+            "question": "¿Cuántos huesos tiene aproximadamente el cuerpo humano adulto?",
+            "options": ["186", "206", "226", "246"],
+            "correctAnswer": 1,
+            "explanation": "El cuerpo humano adulto tiene aproximadamente 206 huesos. Los bebés nacen con más huesos que se van fusionando."
+        },
+        {
+            "question": "¿Qué planeta es conocido como el 'Planeta Rojo'?",
+            "options": ["Venus", "Júpiter", "Marte", "Saturno"],
+            "correctAnswer": 2,
+            "explanation": "Marte es conocido como el 'Planeta Rojo' debido al óxido de hierro en su superficie que le da su color rojizo."
+        },
+        {
+            "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+            "options": ["El hígado", "Los pulmones", "La piel", "El cerebro"],
+            "correctAnswer": 2,
+            "explanation": "La piel es el órgano más grande del cuerpo humano, representando aproximadamente el 16% del peso corporal."
+        },
+        {
+            "question": "¿A qué temperatura hierve el agua a nivel del mar?",
+            "options": ["90°C", "95°C", "100°C", "105°C"],
+            "correctAnswer": 2,
+            "explanation": "El agua hierve a 100°C (212°F) a nivel del mar, a presión atmosférica normal."
+        },
+        {
+            "question": "¿Cuál es el gas más abundante en la atmósfera terrestre?",
+            "options": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Argón"],
+            "correctAnswer": 1,
+            "explanation": "El nitrógeno constituye aproximadamente el 78% de la atmósfera terrestre, siendo el gas más abundante."
+        },
+        {
+            "question": "¿Cuántas cámaras tiene el corazón humano?",
+            "options": ["2", "3", "4", "5"],
+            "correctAnswer": 2,
+            "explanation": "El corazón humano tiene 4 cámaras: 2 aurículas (izquierda y derecha) y 2 ventrículos (izquierdo y derecho)."
+        },
+        {
+            "question": "¿Cuál es la velocidad de la luz en el vacío?",
+            "options": ["300,000 km/h", "300,000 km/s", "30,000 km/s", "3,000,000 km/s"],
+            "correctAnswer": 1,
+            "explanation": "La velocidad de la luz en el vacío es aproximadamente 300,000 kilómetros por segundo (299,792,458 m/s exactamente)."
+        }
+    ]
+}

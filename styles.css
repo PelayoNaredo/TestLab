@@ -56,6 +56,66 @@ body {
     animation-duration: 0.5s;
 }
 
+@keyframes slideInRightFade {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeftFade {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeftFade {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRightFade {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.animate__slideInRightFade {
+    animation-name: slideInRightFade;
+}
+
+.animate__slideOutLeftFade {
+    animation-name: slideOutLeftFade;
+}
+
+.animate__slideInLeftFade {
+    animation-name: slideInLeftFade;
+}
+
+.animate__slideOutRightFade {
+    animation-name: slideOutRightFade;
+}
+
 /* Loading Screen */
 #loading-screen {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);

@@ -18,7 +18,6 @@ class TestLab {
         await this.loadSubjects();
         this.setupEventListeners();
         this.showScreen('subject-screen');
-        this.hideScreen('loading-screen');
     }
 
     async loadSubjects() {
@@ -163,15 +162,15 @@ class TestLab {
     setupEventListeners() {
         // Navigation buttons
         document.getElementById('back-to-subjects').addEventListener('click', () => {
-            this.showScreen('subject-screen');
+            this.showScreen('subject-screen', 'backward');
         });
 
         document.getElementById('back-to-test-types').addEventListener('click', () => {
-            this.showScreen('test-type-screen');
+            this.showScreen('test-type-screen', 'backward');
         });
 
         document.getElementById('back-to-subjects-final').addEventListener('click', () => {
-            this.showScreen('subject-screen');
+            this.showScreen('subject-screen', 'backward');
         });
 
         // Test type selection
@@ -206,17 +205,38 @@ class TestLab {
         });
     }
 
-    showScreen(screenId) {
-        document.querySelectorAll('.screen').forEach(screen => {
-            screen.classList.remove('active', 'animate__animated', 'animate__fadeIn');
-        });
-        
-        const screen = document.getElementById(screenId);
-        screen.classList.add('active', 'animate__animated', 'animate__fadeIn');
-    }
+    showScreen(screenId, direction = 'forward') {
+        const currentScreen = document.querySelector('.screen.active');
+        const nextScreen = document.getElementById(screenId);
 
-    hideScreen(screenId) {
-        document.getElementById(screenId).classList.remove('active');
+        if (currentScreen && currentScreen.id === screenId) return;
+
+        const isInitialLoad = currentScreen && currentScreen.id === 'loading-screen';
+
+        let inAnimation, outAnimation;
+        if (isInitialLoad) {
+            inAnimation = 'animate__fadeIn';
+            outAnimation = 'animate__fadeOut';
+        } else {
+            inAnimation = direction === 'forward' ? 'animate__slideInRight' : 'animate__slideInLeft';
+            outAnimation = direction === 'forward' ? 'animate__slideOutLeft' : 'animate__slideOutRight';
+        }
+        
+        // Animate out current screen
+        if (currentScreen) {
+            currentScreen.classList.add('animate__animated', outAnimation);
+            currentScreen.addEventListener('animationend', () => {
+                currentScreen.classList.remove('active');
+                currentScreen.classList.remove('animate__animated', outAnimation);
+            }, { once: true });
+        }
+
+        // Animate in next screen
+        nextScreen.classList.add('active');
+        nextScreen.classList.add('animate__animated', inAnimation);
+        nextScreen.addEventListener('animationend', () => {
+            nextScreen.classList.remove('animate__animated', inAnimation);
+        }, { once: true });
     }
 
     selectSubject(subjectId) {
@@ -230,14 +250,14 @@ class TestLab {
                 card.style.animationDelay = `${index * 0.1}s`;
             });
 
-            this.showScreen('test-type-screen');
+            this.showScreen('test-type-screen', 'forward');
         }
     }
 
     selectTestType(testType) {
         this.currentTestType = testType;
         this.prepareTest();
-        this.showScreen('test-screen');
+        this.showScreen('test-screen', 'forward');
         this.startTest();
     }
 
@@ -378,14 +398,22 @@ class TestLab {
         const userAnswer = this.userAnswers[this.currentQuestionIndex];
 
         document.querySelectorAll('.answer-option').forEach((option, index) => {
-            if (index === question.correctAnswer) {
-                option.classList.add('correct');
-            } else if (index === userAnswer && index !== question.correctAnswer) {
-                option.classList.add('incorrect');
+            const isCorrect = index === question.correctAnswer;
+            const isUserChoice = index === userAnswer;
+
+            if (isCorrect) {
+                option.classList.add('correct', 'animate__animated', 'animate__tada');
+            } else if (isUserChoice && !isCorrect) {
+                option.classList.add('incorrect', 'animate__animated', 'animate__wobble');
             }
             
             // Disable further clicking
             option.style.pointerEvents = 'none';
+
+            // Clean up animation classes after they finish
+            option.addEventListener('animationend', () => {
+                option.classList.remove('animate__animated', 'animate__tada', 'animate__wobble');
+            }, { once: true });
         });
     }
 
@@ -466,7 +494,7 @@ class TestLab {
     finishTest() {
         this.stopQuestionTimer();
         this.showResults();
-        this.showScreen('results-screen');
+        this.showScreen('results-screen', 'forward');
     }
 
     showResults() {
@@ -525,7 +553,7 @@ class TestLab {
     restartTest() {
         this.prepareTest();
         this.startTest();
-        this.showScreen('test-screen');
+        this.showScreen('test-screen', 'forward');
     }
 }
 

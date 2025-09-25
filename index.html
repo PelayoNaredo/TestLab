@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestLab - Aplicación de Tests</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="screen active">
+            <div class="loading-container">
+                <div class="loading-spinner"></div>
+                <h2>Cargando TestLab...</h2>
+            </div>
+        </div>
+
+        <!-- Subject Selection Screen -->
+        <div id="subject-screen" class="screen">
+            <div class="container">
+                <header class="header">
+                    <h1>TestLab</h1>
+                    <p>Selecciona una materia para comenzar</p>
+                </header>
+                <div class="subjects-grid" id="subjects-grid">
+                    <!-- Subjects will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Type Selection Screen -->
+        <div id="test-type-screen" class="screen">
+            <div class="container">
+                <header class="header">
+                    <button class="back-button" id="back-to-subjects">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                        Volver
+                    </button>
+                    <h1 id="selected-subject-title">Materia Seleccionada</h1>
+                    <p>Selecciona el tipo de test que quieres realizar</p>
+                </header>
+                <div class="test-types-grid">
+                    <div class="test-type-card" data-type="sequential">
+                        <div class="card-icon">📚</div>
+                        <h3>Test Secuencial</h3>
+                        <p>Preguntas en orden, ideal para estudio progresivo</p>
+                    </div>
+                    <div class="test-type-card" data-type="random">
+                        <div class="card-icon">🎲</div>
+                        <h3>Test Aleatorio</h3>
+                        <p>Preguntas en orden aleatorio para práctica general</p>
+                    </div>
+                    <div class="test-type-card" data-type="errors">
+                        <div class="card-icon">❌</div>
+                        <h3>Test de Errores</h3>
+                        <p>Solo preguntas que has fallado anteriormente</p>
+                    </div>
+                    <div class="test-type-card" data-type="timed">
+                        <div class="card-icon">⏱️</div>
+                        <h3>Test Cronometrado</h3>
+                        <p>Modo examen con tiempo limitado por pregunta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Taking Screen -->
+        <div id="test-screen" class="screen">
+            <div class="container">
+                <header class="test-header">
+                    <button class="back-button" id="back-to-test-types">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                        Volver
+                    </button>
+                    <div class="test-progress">
+                        <span id="current-question">1</span> / <span id="total-questions">10</span>
+                    </div>
+                    <div class="test-timer" id="test-timer" style="display: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        <span id="timer-display">00:30</span>
+                    </div>
+                </header>
+                
+                <div class="test-content">
+                    <div class="question-card">
+                        <h2 id="question-text">Pregunta aparecerá aquí</h2>
+                        <div id="question-image" class="question-image" style="display: none;">
+                            <img id="question-img" src="" alt="Imagen de la pregunta">
+                        </div>
+                    </div>
+                    
+                    <div class="answers-container" id="answers-container">
+                        <!-- Answers will be generated dynamically -->
+                    </div>
+                    
+                    <div class="question-explanation" id="question-explanation" style="display: none;">
+                        <h4>Explicación:</h4>
+                        <p id="explanation-text"></p>
+                    </div>
+                    
+                    <div class="test-actions">
+                        <button id="show-explanation" class="secondary-button" style="display: none;">
+                            Ver Explicación
+                        </button>
+                        <button id="next-question" class="primary-button" disabled>
+                            Siguiente Pregunta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="container">
+                <div class="results-content">
+                    <div class="results-header">
+                        <div class="results-icon" id="results-icon">🎉</div>
+                        <h1 id="results-title">¡Test Completado!</h1>
+                    </div>
+                    
+                    <div class="results-stats">
+                        <div class="stat-card">
+                            <div class="stat-value" id="score-percentage">85%</div>
+                            <div class="stat-label">Puntuación</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="correct-answers">17/20</div>
+                            <div class="stat-label">Respuestas Correctas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="time-taken">05:23</div>
+                            <div class="stat-label">Tiempo Empleado</div>
+                        </div>
+                    </div>
+                    
+                    <div class="results-actions">
+                        <button id="restart-test" class="secondary-button">Repetir Test</button>
+                        <button id="back-to-subjects-final" class="primary-button">Volver a Materias</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

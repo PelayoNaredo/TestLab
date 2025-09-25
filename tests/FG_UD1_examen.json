@@ -1,0 +1,414 @@
+{
+  "name": "Examen Integral - Estructura del Cuerpo Humano y Fisiopatología",
+  "icon": "🩺",
+  "description": "Evaluación comprehensiva de anatomía, fisiología y fisiopatología - 40 preguntas clave seleccionadas",
+  "questions": [
+    {
+      "question": "Analice la relación jerárquica entre niveles de organización: Si la hidroxiapatita representa el 65% de la masa ósea y la densidad corporal promedio es 1.06 g/cm³, ¿qué implicaciones tiene esto para la comprensión de los niveles molecular y anatómico?",
+      "options": [
+        "Solo afecta al nivel molecular por ser un compuesto químico",
+        "Demuestra la interconexión entre nivel molecular (fosfato cálcico) y anatómico (función estructural ósea)",
+        "Es irrelevante para la organización corporal",
+        "Únicamente influye en el nivel atómico del fósforo y calcio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La hidroxiapatita ejemplifica cómo el nivel molecular (fosfato cálcico cristalino) determina las propiedades del nivel anatómico (resistencia y dureza ósea), mostrando la integración funcional entre niveles organizacionales."
+    },
+    {
+      "question": "Evalúe la paradoja de los virus y priones respecto a las funciones vitales tradicionales. ¿Qué implicaciones conceptuales tiene esto para redefinir el concepto de 'vida'?",
+      "options": [
+        "Confirma que las tres funciones son absolutamente necesarias",
+        "Sugiere que el concepto de vida es más complejo y gradual de lo tradicionalmente aceptado",
+        "Demuestra que no son organismos vivos en absoluto",
+        "Indica que solo la reproducción es esencial para la vida"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los virus (relación y reproducción sin nutrición) y priones (solo reproducción) sugieren que la vida existe en un espectro, cuestionando la rigidez del modelo tradicional de tres funciones obligatorias."
+    },
+    {
+      "question": "Compare las diferencias funcionales entre la relación celular y la del organismo completo. ¿Por qué la complejidad multicelular permite mayor adaptabilidad?",
+      "options": [
+        "Porque tienen más células",
+        "Por la especialización celular y sistemas de integración (nervioso, endocrino, inmune)",
+        "Solo por el tamaño mayor",
+        "Porque pueden moverse más fácilmente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La multicelularidad permite especialización funcional de células, tejidos y órganos, coordinados por sistemas de integración que procesan información compleja y generan respuestas sofisticadas."
+    },
+    {
+      "question": "Analice por qué la posición anatómica estándar especifica que las palmas deben mirar hacia delante. ¿Qué problemas de interpretación resolvería?",
+      "options": [
+        "Es solo una convención arbitraria sin importancia",
+        "Evita confusión en términos como medial/lateral en antebrazo y determina correctamente la anatomía de radio y cúbito",
+        "Solo facilita la identificación de derecha e izquierda",
+        "Únicamente ayuda en la toma de radiografías"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Con palmas hacia delante, el radio queda lateral y el cúbito medial en posición anatómica, evitando confusión cuando el antebrazo rota y definiendo consistentemente las relaciones anatómicas."
+    },
+    {
+      "question": "Integre los tres ejes espaciales con los planos de referencia: ¿Cómo se relaciona el eje cráneo-caudal con el plano transverso en términos de perpendicularidad funcional?",
+      "options": [
+        "Son paralelos entre sí",
+        "El eje cráneo-caudal es perpendicular al plano transverso, permitiendo secciones que dividen superior-inferior",
+        "No tienen relación espacial",
+        "Solo se relacionan en el plano sagital"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El eje cráneo-caudal (vertical) es perpendicular al plano transverso (horizontal), creando cortes que separan estructuras superiores de inferiores, fundamental para imagenología médica."
+    },
+    {
+      "question": "Aplique los términos direccionales: Si un tumor se localiza 'proximal al codo, medial al radio, profundo al músculo braquiorradial', ¿dónde se ubicaría anatómicamente?",
+      "options": [
+        "En la muñeca, lado externo, superficial",
+        "En el brazo, lado interno/medial, bajo el músculo mencionado",
+        "En el hombro, lado externo, sobre el músculo",
+        "En el antebrazo distal, lateral, superficial"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Proximal al codo = en el brazo; medial al radio = hacia el lado del cúbito/interno; profundo al braquiorradial = por debajo de este músculo. Localización: brazo medial, profundo."
+    },
+    {
+      "question": "Analice la biomecánica de movimientos: Durante la pronación del antebrazo, ¿qué sucede espacialmente con la relación anatómica entre radio y cúbito?",
+      "options": [
+        "Mantienen su posición relativa constante",
+        "El radio cruza sobre el cúbito, alterando las relaciones medial/lateral",
+        "Solo el cúbito se mueve",
+        "Ambos rotan en direcciones opuestas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En pronación, el radio rota y cruza sobre el cúbito, cambiando las relaciones espaciales. Por eso la posición anatómica especifica supinación (palmas adelante) como referencia."
+    },
+    {
+      "question": "Evalúe la organización de cavidades corporales: ¿Por qué el mediastino no se considera una cavidad independiente sino una región dentro de la torácica?",
+      "options": [
+        "Porque es muy pequeño",
+        "Porque contiene múltiples órganos en un espacio de separación entre las cavidades pleurales",
+        "Porque no tiene límites definidos",
+        "Porque solo contiene el corazón"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El mediastino es el espacio central torácico entre ambas cavidades pleurales, conteniendo corazón, grandes vasos, esófago y otras estructuras, funcionando como compartimento organizador."
+    },
+    {
+      "question": "Correlacione anatomía topográfica con clínica: ¿Por qué el sistema de 9 regiones abdominales es más preciso que el de 4 cuadrantes para localización de órganos?",
+      "options": [
+        "Es más fácil de memorizar",
+        "Permite mayor especificidad anatómica al subdividir áreas grandes en regiones más pequeñas y definidas",
+        "Solo es útil para cirugía",
+        "Funciona mejor para radiografías"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las 9 regiones proporcionan localización más precisa (ej: hipocondrio derecho vs. cuadrante superior derecho) permitiendo mejor correlación clínico-anatómica en diagnóstico."
+    },
+    {
+      "question": "Integre estructura-función: ¿Cómo se relaciona la forma de 'paracaídas' del diafragma con su función en la mecánica respiratoria?",
+      "options": [
+        "La forma no influye en la función",
+        "La forma cóncava hacia abajo permite mayor cambio de volumen torácico durante contracción/relajación",
+        "Solo sirve para separar cavidades",
+        "Es igual de eficiente cualquier forma"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La forma cóncava del diafragma maximiza el cambio de volumen torácico: al contraerse se aplana, aumentando el espacio torácico y creando presión negativa para la inspiración."
+    },
+    {
+      "question": "Analice la complejidad de la función digestiva: ¿Por qué se inicia en la cavidad bucal pero la absorción principal ocurre en el intestino delgado?",
+      "options": [
+        "Es una coincidencia evolutiva",
+        "Permite procesamiento secuencial: digestión mecánica/química inicial, seguida de digestión enzimática completa y absorción especializada",
+        "Solo por espacio disponible",
+        "Para evitar intoxicaciones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El proceso digestivo requiere etapas: masticación y amilasa salival inician degradación, estómago continúa con pepsina/HCl, e intestino delgado completa con enzimas pancreáticas y absorbe con microvellosidades."
+    },
+    {
+      "question": "Evalúe la integración de sistemas en la función de relación: ¿Cómo coordinan sistema nervioso y endocrino respuestas a largo y corto plazo?",
+      "options": [
+        "Funcionan independientemente",
+        "Sistema nervioso maneja respuestas rápidas/precisas, endocrino respuestas lentas/duraderas, con integración en hipotálamo",
+        "Solo el nervioso es importante",
+        "Ambos tienen la misma velocidad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El sistema nervioso proporciona respuestas rápidas y precisas (milisegundos), mientras el endocrino genera respuestas más lentas pero duraderas (minutos-horas). El hipotálamo integra ambos sistemas."
+    },
+    {
+      "question": "Aplique conceptos de fisiopatología: ¿Cómo afectaría una lesión del diafragma a múltiples funciones vitales simultáneamente?",
+      "options": [
+        "Solo afectaría la respiración",
+        "Comprometería respiración (ventilación), circulación (retorno venoso) y digestión (presión abdominal)",
+        "No tendría efectos importantes",
+        "Solo afectaría la postura"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El diafragma es crucial para: ventilación pulmonar, bomba muscular que facilita retorno venoso, mantenimiento de presión abdominal para digestión, y estabilización del core."
+    },
+    {
+      "question": "Correlacione niveles de organización con patología: ¿Cómo puede una mutación en el nivel molecular (colágeno defectuoso) manifestarse en el nivel anatómico?",
+      "options": [
+        "No hay relación entre niveles",
+        "Alteración molecular → tejido conectivo débil → deformidades articulares/vasculares (ej: síndrome de Ehlers-Danlos)",
+        "Solo afecta células individuales",
+        "Únicamente causa problemas estéticos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Defectos en colágeno (nivel molecular) comprometen integridad de tejidos conectivos, manifestándose como hiperlaxitud articular, fragilidad vascular y deformidades esqueléticas (nivel anatómico)."
+    },
+    {
+      "question": "Analice la especialización funcional: ¿Por qué las extremidades superiores desarrollaron psicomotricidad fina mientras las inferiores se especializaron en locomoción?",
+      "options": [
+        "Es casualidad evolutiva",
+        "Liberación de extremidades superiores por bipedestación permitió especialización manipulativa, mientras inferiores mantuvieron función locomotora",
+        "Todas las extremidades son iguales",
+        "Solo por diferencias de tamaño"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La bipedestación humana liberó las extremidades superiores de la locomoción, permitiendo evolución hacia manipulación fina, uso de herramientas y gestos complejos, mientras las inferiores se optimizaron para caminar erecto."
+    },
+    {
+      "question": "Integre conceptos de densidad corporal con composición: Si un individuo tiene densidad corporal de 1.08 g/cm³, ¿qué implica sobre su composición tisular?",
+      "options": [
+        "Composición normal estándar",
+        "Mayor proporción de tejido muscular y óseo (densos) versus tejido adiposo (menos denso)",
+        "Mayor contenido de agua únicamente",
+        "Indica patología obligatoriamente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Densidad >1.06 g/cm³ sugiere mayor proporción de tejidos densos (músculo ~1.06, hueso ~1.9) versus tejido adiposo (~0.9), típico de individuos con mayor masa muscular y menor grasa corporal."
+    },
+    {
+      "question": "Evalúe la complejidad de la reproducción sexual humana: ¿Por qué requiere dos aparatos reproductores diferentes a diferencia de la reproducción celular?",
+      "options": [
+        "Para complicar el proceso",
+        "Permite variabilidad genética mediante meiosis y recombinación, aumentando adaptabilidad evolutiva",
+        "Solo por diferencias anatómicas",
+        "Es menos eficiente que la división celular"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La reproducción sexual combina material genético de dos progenitores mediante meiosis, generando variabilidad genética crucial para adaptación evolutiva, supervivencia y resistencia a enfermedades."
+    },
+    {
+      "question": "Aplique anatomía topográfica en diagnóstico: Un dolor en hipocondrio derecho podría originarse en múltiples órganos. ¿Cuál sería el abordaje diagnóstico más lógico?",
+      "options": [
+        "Asumir que es el hígado automáticamente",
+        "Considerar hígado, vesícula biliar, ángulo hepático del colon, riñón derecho y correlacionar con síntomas específicos",
+        "Solo hacer radiografías",
+        "Ignorar la localización"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El hipocondrio derecho contiene múltiples estructuras. El diagnóstico diferencial debe considerar cada órgano presente y correlacionar con síntomas asociados, examen físico y estudios complementarios."
+    },
+    {
+      "question": "Analice la homeostasis como integración funcional: ¿Cómo participan conjuntamente nutrición, relación y reproducción en mantener el equilibrio corporal?",
+      "options": [
+        "Funcionan completamente independientes",
+        "Nutrición aporta energía, relación detecta/responde a cambios, reproducción asegura continuidad - todas coordinadas homeostáticamente",
+        "Solo la nutrición importa para homeostasis",
+        "La reproducción no contribuye al equilibrio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La homeostasis integra las tres funciones: nutrición proporciona recursos energéticos, relación detecta desequilibrios y coordina respuestas correctivas, reproducción asegura perpetuación de estos mecanismos."
+    },
+    {
+      "question": "Correlacione estructura de la caja torácica con función respiratoria: ¿Por qué las costillas tienen forma arqueada y articulaciones móviles?",
+      "options": [
+        "Solo para proteger órganos",
+        "Permite expansión tridimensional del tórax durante inspiración mientras mantiene protección estructural",
+        "Es resultado de la postura erguida únicamente",
+        "Para facilitar la circulación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La forma arqueada y articulaciones costovertebrales/condroesternales permiten elevación y expansión costal durante inspiración, aumentando diámetros torácicos antero-posterior y lateral para ventilación eficiente."
+    },
+    {
+      "question": "Evalúe la importancia clínica de los planos anatómicos en imagenología: ¿Por qué la TC y RM utilizan específicamente cortes transversales, coronales y sagitales?",
+      "options": [
+        "Para hacer las imágenes más bonitas",
+        "Corresponden a los planos anatómicos estándar, permitiendo visualización sistemática y correlación clínico-anatómica precisa",
+        "Es más fácil para los técnicos",
+        "Solo por tradición médica"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los planos de imagenología coinciden con planos anatómicos estándar, facilitando interpretación médica sistemática, localización precisa de patología y comunicación uniforme entre profesionales."
+    },
+    {
+      "question": "Integre conocimiento sobre cavidades y función: ¿Por qué la cavidad pericárdica (alrededor del corazón) contiene líquido seroso?",
+      "options": [
+        "Para llenar el espacio",
+        "Reduce fricción durante contracción cardíaca y permite movimiento suave del corazón",
+        "Solo para protección",
+        "Para mantener temperatura"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El líquido pericárdico actúa como lubricante, reduciendo fricción entre capas pericárdicas durante los movimientos de contracción y relajación cardíaca, previniendo desgaste y adherencias."
+    },
+    {
+      "question": "Analice la relación entre sistema circulatorio y función de nutrición: ¿Por qué se requiere un sistema de transporte especializado a nivel multicelular?",
+      "options": [
+        "Solo para distribuir sangre",
+        "Porque la difusión simple es insuficiente para distancias grandes; se requiere transporte activo de O₂, nutrientes y desechos",
+        "Para mantener la presión arterial",
+        "Es innecesario en organismos pequeños"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En organismos multicelulares, las células están alejadas del ambiente externo. La difusión simple es inadecuada para distancias >100 μm, requiriendo sistema circulatorio para transporte eficiente."
+    },
+    {
+      "question": "Evalúe la complejidad del cuello como región anatómica: ¿Por qué concentra funciones de transmisión neural, digestiva, respiratoria y endocrina?",
+      "options": [
+        "Es casualidad anatómica",
+        "Representa zona de transición obligatoria entre cabeza y tronco para todas las estructuras vitales",
+        "Solo por cuestiones estéticas",
+        "Para simplificar la anatomía"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El cuello es el único paso anatómico entre cabeza y tronco, obligando a que todas las conexiones vitales (médula espinal, esófago, tráquea, vasos, nervios) transiten por este espacio limitado."
+    },
+    {
+      "question": "Correlacione embriología con organización corporal: ¿Por qué el desarrollo embrionario sigue una secuencia céfalo-caudal y próximo-distal?",
+      "options": [
+        "Es patrón aleatorio",
+        "Refleja prioridades funcionales: desarrollo del sistema nervioso central primero, seguido de extremidades desde tronco hacia periferia",
+        "Solo por facilidad de crecimiento",
+        "Para ocupar espacio uniformemente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El patrón céfalo-caudal prioriza desarrollo neural (control), mientras próximo-distal asegura vascularización e inervación antes de formar estructuras distales, siguiendo jerarquías funcionales."
+    },
+    {
+      "question": "Aplique fisiopatología respiratoria: ¿Cómo afectaría una lesión de médula espinal C3-C5 a la función del diafragma y respiración?",
+      "options": [
+        "No tendría efectos",
+        "Parálisis diafragmática por interrupción del nervio frénico, requiriendo ventilación mecánica",
+        "Solo afectaría músculos abdominales",
+        "Mejoraría la respiración"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El nervio frénico (C3-C5) inerva el diafragma. Lesión medular a este nivel interrumpe la transmisión, causando parálisis diafragmática y dependencia de ventilación artificial."
+    },
+    {
+      "question": "Integre anatomía funcional del sistema digestivo: ¿Por qué el intestino delgado tiene microvellosidades mientras el colon tiene haustra?",
+      "options": [
+        "Son estructuras decorativas",
+        "Microvellosidades maximizan superficie de absorción; haustra facilitan almacenamiento y formación de heces",
+        "Solo por diferencias de tamaño",
+        "Para distinguir anatómicamente ambas regiones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las microvellosidades aumentan 30x la superficie absortiva del intestino delgado, mientras las haustra del colon permiten distensión para almacenamiento y absorción de agua residual."
+    },
+    {
+      "question": "Evalúe la integración neurohormonal: ¿Cómo explica que el hipotálamo sea considerado el 'enlace' entre sistema nervioso y endocrino?",
+      "options": [
+        "Solo por su ubicación anatómica",
+        "Contiene neuronas que secretan hormonas, integrando señales nerviosas con respuestas hormonales",
+        "Es más grande que otras estructuras",
+        "Controla únicamente la temperatura"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El hipotálamo contiene neuronas neurosecretoras que traducen impulsos nerviosos en señales hormonales, controlando hipófisis y coordinando respuestas neuroendocrinas integradas."
+    },
+    {
+      "question": "Analice biomecánica articular: ¿Por qué las articulaciones del hombro permiten mayor rango de movimiento que las de la cadera?",
+      "options": [
+        "El hombro es más fuerte",
+        "Menor congruencia articular en hombro prioriza movilidad sobre estabilidad, mientras cadera equilibra ambos factores",
+        "Solo por diferencias de tamaño",
+        "La cadera no necesita movilidad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El hombro sacrifica estabilidad por movilidad (cavidad glenoidea poco profunda), mientras la cadera equilibra movilidad con estabilidad (acetábulo profundo) para soporte de peso corporal."
+    },
+    {
+      "question": "Correlacione metabolismo con función de excreción: ¿Por qué los riñones filtran 180L de plasma diario pero solo producen 1-2L de orina?",
+      "options": [
+        "Es un error fisiológico",
+        "Permite regulación precisa mediante reabsorción selectiva de agua, electrolitos y nutrientes valiosos",
+        "Los riñones funcionan mal",
+        "Para producir más orina cuando sea necesario"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La filtración masiva seguida de reabsorción selectiva permite ajuste fino de volumen, concentración y composición urinaria según necesidades homeostáticas específicas del organismo."
+    },
+    {
+      "question": "Integre desarrollo y función: ¿Por qué la mielinización del sistema nervioso continúa hasta los 20-25 años, mucho después del nacimiento?",
+      "options": [
+        "Es un proceso lento sin importancia",
+        "Coincide con desarrollo de funciones cognitivas complejas, control motor fino y toma de decisiones",
+        "Los bebés no necesitan mielina",
+        "Solo ocurre por falta de nutrientes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La mielinización tardía de corteza prefrontal y otras áreas se correlaciona con desarrollo de funciones ejecutivas, control de impulsos y capacidades cognitivas superiores en adolescencia/adultez temprana."
+    },
+    {
+      "question": "Evalúe adaptación evolutiva: ¿Cómo explica la anatomía que los humanos mantengan reflejo de prensión palmar vestigial en recién nacidos?",
+      "options": [
+        "Es un defecto de desarrollo",
+        "Vestigio evolutivo de ancestros primates que necesitaban sujetarse a pelaje materno para supervivencia",
+        "Sirve para fortalecer músculos",
+        "Es puramente decorativo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El reflejo de prensión es vestigio evolutivo que permitía a crías de primates sujetarse al pelaje materno durante desplazamientos, crucial para supervivencia en especies arbóreas ancestrales."
+    },
+    {
+      "question": "Analice complejidad sistémica: Durante el ejercicio intenso, ¿cómo coordinan los sistemas respiratorio, circulatorio y muscular para mantener homeostasis?",
+      "options": [
+        "Funcionan independientemente",
+        "Integración mediante retroalimentación: músculos demandan O₂, respiración aumenta ventilación, corazón acelera para transporte coordinado",
+        "Solo el corazón trabaja más",
+        "Se detienen otros sistemas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ejercicio desencadena respuesta integrada: músculos liberan CO₂/ácido láctico, quimiorreceptores estimulan centros respiratorio/cardíaco, aumentando ventilación y gasto cardíaco coordinadamente."
+    },
+    {
+      "question": "Sintetice conocimientos sobre organización corporal: ¿Cómo demuestra el concepto de 'sistemas de sistemas' que el cuerpo humano es más que la suma de sus partes?",
+      "options": [
+        "No es cierto, es exactamente la suma",
+        "Las interacciones entre sistemas generan propiedades emergentes (conciencia, homeostasis compleja) inexistentes en componentes aislados",
+        "Los sistemas son independientes",
+        "Solo es importante el sistema nervioso"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La integración sistémica produce propiedades emergentes como conciencia, personalidad y homeostasis dinámica que no existen en sistemas aislados, demostrando que el organismo trasciende la simple suma de componentes."
+    },
+    {
+      "question": "Aplique pensamiento fisiopatológico: Un paciente presenta alteraciones simultáneas en digestión, respiración y circulación. ¿Qué nivel organizacional estaría primariamente afectado?",
+      "options": [
+        "Nivel molecular únicamente",
+        "Nivel sistémico o de coordinación entre sistemas, posiblemente neurológico o endocrino",
+        "Solo nivel celular",
+        "Nivel anatómico exclusivamente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Alteraciones multisistémicas simultáneas sugieren disfunción en niveles de coordinación superior (sistema nervioso central, endocrino o inmune) que integran y controlan múltiples funciones vitales."
+    },
+    {
+      "question": "Evalúe implicaciones evolutivas de la bipedestación: ¿Cómo modificó la organización anatómica general del cuerpo humano comparado con cuadrúpedos?",
+      "options": [
+        "Solo cambió la postura",
+        "Reorganización completa: curvatura espinal, pelvis modificada, extremidades especializadas, cráneo reposicionado",
+        "Únicamente afectó las piernas",
+        "No tuvo efectos importantes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La bipedestación requirió: lordosis lumbar/cervical para equilibrio, pelvis ensanchada para soporte, extremidades superiores liberadas para manipulación, y foramen magnum ventral para cabeza erguida."
+    },
+    {
+      "question": "Integre todos los conceptos: ¿Cómo ejemplifica el dolor referido (sentido en ubicación diferente a su origen) la complejidad de la organización corporal?",
+      "options": [
+        "Es solo confusión del cerebro",
+        "Demuestra convergencia de vías neurales, desarrollo embrionario compartido y complejidad de la integración sensitiva",
+        "Indica malformaciones anatómicas",
+        "Es puramente psicológico"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El dolor referido refleja convergencia de aferencias viscerales y somáticas, origen embrionario común de estructuras, y complejidad de procesamiento neural que integra múltiples niveles organizacionales."
+    }
+  ]
+}

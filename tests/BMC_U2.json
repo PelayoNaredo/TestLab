@@ -1,0 +1,1037 @@
+{
+  "name": "Biología Molecular Unidad 1",
+  "icon": "🧬",
+  "description": "Test sobre la estructura, composición y función de ADN y ARN, así como las enzimas relacionadas",
+  "questions": [
+    {
+      "question": "¿Cuáles son las dos principales funciones de los ácidos nucleicos?",
+      "options": [
+        "Síntesis de lípidos y carbohidratos",
+        "Almacenar, transmitir y expresar información genética",
+        "Regular la temperatura corporal y el pH",
+        "Producir energía y formar membranas celulares"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los ácidos nucleicos (ADN y ARN) son macromoléculas poliméricas que almacenan, transmiten y expresan la información genética de los seres vivos."
+    },
+    {
+      "question": "¿Cuál es la función principal del ADN?",
+      "options": [
+        "Sintetizar proteínas directamente",
+        "Almacenar la información hereditaria y controlar su transmisión",
+        "Regular el metabolismo celular",
+        "Formar la membrana nuclear"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ADN (ácido desoxirribonucleico) almacena la información hereditaria y controla su transmisión a la descendencia."
+    },
+    {
+      "question": "¿Cuál es la función principal del ARN?",
+      "options": [
+        "Almacenar información genética permanente",
+        "Se encarga de la expresión de información mediante síntesis de proteínas",
+        "Formar cromosomas",
+        "Proteger al ADN de mutaciones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARN (ácido ribonucleico) se encarga de la expresión de información genética mediante la síntesis de proteínas, ejecutando las órdenes del ADN."
+    },
+    {
+      "question": "¿Por qué componentes está formado un nucleótido?",
+      "options": [
+        "Base nitrogenada, hexosa y grupo sulfato",
+        "Base nitrogenada, pentosa y ácido fosfórico",
+        "Aminoácido, glucosa y fosfato",
+        "Purina, ribosa y grupo amino"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los nucleótidos, unidades estructurales de los ácidos nucleicos, están formados por una base nitrogenada, una pentosa (glúcido de 5 átomos de carbono) y una molécula de ácido fosfórico en forma de anión fosfato."
+    },
+    {
+      "question": "¿Cuáles son las bases púricas?",
+      "options": [
+        "Citosina y Timina",
+        "Adenina y Guanina",
+        "Uracilo y Citosina",
+        "Timina y Uracilo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las bases púricas derivan de la purina y son la adenina (A) y la guanina (G). Son de mayor tamaño que las pirimidínicas."
+    },
+    {
+      "question": "¿Cuáles son las bases pirimidínicas?",
+      "options": [
+        "Adenina y Guanina",
+        "Citosina, Timina y Uracilo",
+        "Solo Adenina y Citosina",
+        "Guanina, Timina y Adenina"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las bases pirimidínicas derivan de la pirimidina y son la citosina (C), la timina (T) y el uracilo (U). La timina está en el ADN y el uracilo en el ARN."
+    },
+    {
+      "question": "¿Qué pentosa contiene el ADN?",
+      "options": ["Ribosa", "Desoxirribosa", "Fructosa", "Glucosa"],
+      "correctAnswer": 1,
+      "explanation": "El ADN contiene desoxirribosa como pentosa, que se diferencia de la ribosa por carecer de un grupo hidroxilo en el carbono 2'."
+    },
+    {
+      "question": "¿Qué pentosa contiene el ARN?",
+      "options": ["Desoxirribosa", "Ribosa", "Xilosa", "Arabinosa"],
+      "correctAnswer": 1,
+      "explanation": "El ARN contiene ribosa como pentosa, que presenta grupos hidroxilo en los carbonos 2' y 3'."
+    },
+    {
+      "question": "¿Qué bases nitrogenadas están presentes en el ADN?",
+      "options": ["A, C, G, U", "A, C, G, T", "A, T, U, G", "C, G, T, U"],
+      "correctAnswer": 1,
+      "explanation": "El ADN contiene cuatro bases nitrogenadas: Adenina (A), Citosina (C), Guanina (G) y Timina (T)."
+    },
+    {
+      "question": "¿Qué bases nitrogenadas están presentes en el ARN?",
+      "options": ["A, C, G, T", "A, C, G, U", "A, T, G, U", "C, T, G, U"],
+      "correctAnswer": 1,
+      "explanation": "El ARN contiene cuatro bases nitrogenadas: Adenina (A), Citosina (C), Guanina (G) y Uracilo (U). El uracilo reemplaza a la timina del ADN."
+    },
+    {
+      "question": "¿Cómo es la estructura del ADN en términos de cadenas?",
+      "options": [
+        "Monocatenario",
+        "Bicatenario",
+        "Tricatenario",
+        "Variable según la especie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ADN es bicatenario, formado por dos cadenas polinucleotídicas que forman una doble hélice."
+    },
+    {
+      "question": "¿Cómo es la estructura del ARN en términos de cadenas?",
+      "options": [
+        "Bicatenario",
+        "Monocatenario",
+        "Tricatenario",
+        "Siempre circular"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARN es generalmente monocatenario (una sola cadena), aunque puede plegarse sobre sí mismo formando estructuras secundarias."
+    },
+    {
+      "question": "En la estructura primaria del ADN, ¿cómo se unen los nucleótidos?",
+      "options": [
+        "Por puentes de hidrógeno entre bases",
+        "Por enlaces fosfodiéster entre el grupo fosfato de un nucleótido y el hidroxilo del siguiente",
+        "Por enlaces peptídicos",
+        "Por fuerzas de Van der Waals"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la estructura primaria, los nucleótidos se unen mediante enlaces fosfodiéster entre el grupo fosfato del carbono 5' de un nucleótido y el grupo hidroxilo del carbono 3' del siguiente."
+    },
+    {
+      "question": "¿Qué extremos libres tiene todo polinucleótido?",
+      "options": [
+        "Extremo amino y carboxilo",
+        "Extremo 5' y extremo 3'",
+        "Extremo alfa y beta",
+        "Extremo positivo y negativo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Todo polinucleótido tiene un extremo 5' (con grupo fosfato libre) y un extremo 3' (con grupo hidroxilo libre)."
+    },
+    {
+      "question": "¿Qué característica tienen las cadenas del ADN en cuanto a su orientación?",
+      "options": [
+        "Son paralelas",
+        "Son antiparalelas",
+        "Son perpendiculares",
+        "No tienen orientación definida"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las cadenas del ADN son antiparalelas: los enlaces 5'-3' están orientados en sentidos opuestos, lo que permite la complementariedad de bases."
+    },
+    {
+      "question": "¿Cuántos puentes de hidrógeno forman la adenina y la timina?",
+      "options": ["1 puente", "2 puentes", "3 puentes", "4 puentes"],
+      "correctAnswer": 1,
+      "explanation": "La adenina (A) y la timina (T) forman 2 puentes de hidrógeno entre ellas, según el principio de complementariedad."
+    },
+    {
+      "question": "¿Cuántos puentes de hidrógeno forman la citosina y la guanina?",
+      "options": ["1 puente", "2 puentes", "3 puentes", "4 puentes"],
+      "correctAnswer": 2,
+      "explanation": "La citosina (C) y la guanina (G) forman 3 puentes de hidrógeno entre ellas, lo que hace esta pareja más estable que A-T."
+    },
+    {
+      "question": "¿Qué establece la ley de Chargaff?",
+      "options": [
+        "El ADN es más estable que el ARN",
+        "En el ADN bicatenario, la cantidad de A = T y la cantidad de C = G",
+        "Los nucleótidos se unen por enlaces covalentes",
+        "El ARN deriva del ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ley de Chargaff establece que en cualquier ADN bicatenario, la cantidad de adenina es igual a la de timina, y la cantidad de citosina es igual a la de guanina, debido al principio de complementariedad."
+    },
+    {
+      "question": "¿Quiénes propusieron el modelo de la doble hélice del ADN en 1953?",
+      "options": [
+        "Darwin y Mendel",
+        "Watson y Crick",
+        "Franklin y Wilkins",
+        "Chargaff y Pauling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "James Watson y Francis Crick propusieron el modelo de la doble hélice del ADN en 1953, basándose en gran parte en los datos de difracción de rayos X de Rosalind Franklin."
+    },
+    {
+      "question": "¿Cuál fue la contribución esencial de Rosalind Franklin al descubrimiento de la estructura del ADN?",
+      "options": [
+        "Propuso el modelo de doble hélice",
+        "Aportó la imagen de la molécula por difracción de rayos X",
+        "Descubrió las bases nitrogenadas",
+        "Estableció la ley de complementariedad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rosalind Franklin fue esencial porque aportó la famosa 'Fotografía 51', imagen obtenida por difracción de rayos X que mostraba la estructura helicoidal del ADN."
+    },
+    {
+      "question": "¿Por qué el empaquetamiento del ADN en eucariotas es más complejo que en procariotas?",
+      "options": [
+        "Porque tienen menos cromosomas",
+        "Porque la cantidad de ADN de cada cromosoma es muy grande",
+        "Porque no tienen núcleo",
+        "Porque el ADN es circular"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas, dado que la cantidad de ADN de cada cromosoma es muy grande, el empaquetamiento ha de ser más complejo y compacto, necesitando proteínas como las histonas."
+    },
+    {
+      "question": "¿Qué proteínas son esenciales para el empaquetamiento del ADN eucariota?",
+      "options": [
+        "Actinas y miosinas",
+        "Histonas y proteínas no histónicas",
+        "Hemoglobinas y albúminas",
+        "Colágenos y queratinas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Para el empaquetamiento del ADN eucariota se necesita la presencia de proteínas, como las histonas y otras proteínas de naturaleza no histónica."
+    },
+    {
+      "question": "¿Qué es un nucleosoma?",
+      "options": [
+        "Una enzima que replica el ADN",
+        "La unidad básica de empaquetamiento del ADN",
+        "Un tipo de ARN mensajero",
+        "Una proteína reguladora"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El nucleosoma es la unidad básica de empaquetamiento del ADN en eucariotas, formado por un núcleo de histonas alrededor del cual se enrolla el ADN."
+    },
+    {
+      "question": "¿Qué estructura forma el ADN al enrollarse helicoidalmente con seis núcleos más en cada vuelta?",
+      "options": ["Nucleosoma", "Solenoide", "Cromátida", "Heterocromatina"],
+      "correctAnswer": 1,
+      "explanation": "El solenoide es la estructura cuaternaria del ADN donde se enrolla helicoidalmente con seis núcleos más en cada vuelta, acortando cinco veces la longitud de la fibra nucleosómica."
+    },
+    {
+      "question": "¿Qué sucede con la fibra de 30 nm durante el empaquetamiento?",
+      "options": [
+        "Se desnaturaliza",
+        "Se pliega en forma de grandes bucles o lazos formando fibra de 300nm",
+        "Se duplica",
+        "Se transcribe a ARN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La fibra de 30 nm se pliega en forma de grandes bucles o lazos para formar la fibra de 300nm, continuando el proceso de compactación del ADN."
+    },
+    {
+      "question": "¿Cómo se forma la fibra de 700nm?",
+      "options": [
+        "Los nucleosomas se separan",
+        "Los bucles se compactan y enrollan formando espirales",
+        "El ADN se desnaturaliza",
+        "Las histonas se disocian"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La fibra de 700nm se forma cuando los bucles de la fibra de 300nm se compactan y enrollan formando espirales, aumentando aún más la compactación."
+    },
+    {
+      "question": "¿Qué es el cariotipo?",
+      "options": [
+        "El proceso de división celular",
+        "El conjunto de cromosomas de un individuo",
+        "Un tipo de mutación genética",
+        "La secuencia completa del ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El cariotipo es el conjunto de cromosomas de un individuo. El ser humano tiene 46 cromosomas (23 pares), donde uno de esos pares diferencia los sexos (XY hombre, XX mujer)."
+    },
+    {
+      "question": "¿Cuántos cromosomas tiene el ser humano?",
+      "options": [
+        "44 cromosomas (22 pares)",
+        "46 cromosomas (23 pares)",
+        "48 cromosomas (24 pares)",
+        "50 cromosomas (25 pares)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ser humano tiene 46 cromosomas organizados en 23 pares, incluyendo un par de cromosomas sexuales (XY en hombres, XX en mujeres)."
+    },
+    {
+      "question": "Además de ejecutar las órdenes del ADN, ¿qué otra función puede tener el ARN en algunos virus?",
+      "options": [
+        "Formar la cápside viral",
+        "Almacenar la información genética",
+        "Regular la temperatura",
+        "Sintetizar lípidos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En algunos virus, el ARN también es el encargado de almacenar la información genética, no solo de ejecutar las órdenes como en las células normales."
+    },
+    {
+      "question": "¿Dónde se encuentra el ARN en la célula?",
+      "options": [
+        "Solo en el núcleo",
+        "En el núcleo, citoplasma y ribosomas",
+        "Solo en los ribosomas",
+        "Solo en el citoplasma"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARN se encuentra en el núcleo (donde se sintetiza), en el citoplasma y en los ribosomas (donde participa en la síntesis de proteínas)."
+    },
+    {
+      "question": "¿Por qué el ARN puede parecer bicatenario siendo monocatenario?",
+      "options": [
+        "Porque siempre forma dobles cadenas",
+        "Porque se pliega sobre sí mismo en zonas con bases complementarias",
+        "Porque se une a proteínas",
+        "Porque duplica su estructura"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARN puede parecer bicatenario porque se pliega sobre sí mismo cuando tiene zonas con bases complementarias, formando estructuras tipo horquilla."
+    },
+    {
+      "question": "¿Cuál es la función principal del ARN mensajero (ARNm)?",
+      "options": [
+        "Formar los ribosomas",
+        "Copiar la información de un gen y llevarla a los ribosomas",
+        "Transportar aminoácidos",
+        "Regular la expresión génica"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARNm copia la información de un gen durante la transcripción y la lleva a los ribosomas donde se sintetizan las proteínas. Actúa como mensajero de las instrucciones genéticas."
+    },
+    {
+      "question": "¿Cuál es la función del ARN transferente (ARNt)?",
+      "options": [
+        "Copiar la información genética",
+        "Transportar aminoácidos hasta los ribosomas",
+        "Formar la estructura del ribosoma",
+        "Regular la transcripción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARNt transporta aminoácidos específicos hasta los ribosomas para formar las proteínas. Cada ARNt lleva un aminoácido específico y tiene un anticodón complementario a los codones del ARNm."
+    },
+    {
+      "question": "¿Qué forma característica tiene la estructura secundaria del ARNt?",
+      "options": ["Lineal", "Trébol", "Circular", "Espiral"],
+      "correctAnswer": 1,
+      "explanation": "La estructura secundaria del ARNt tiene forma de trébol debido a su plegamiento interno, aunque su estructura terciaria es más compleja y tridimensional."
+    },
+    {
+      "question": "¿Cuál es la función del ARN ribosómico (ARNr)?",
+      "options": [
+        "Transportar información genética",
+        "Formar la estructura de los ribosomas junto con proteínas",
+        "Llevar aminoácidos",
+        "Regular la transcripción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARNr forma la estructura de los ribosomas junto con proteínas ribosómicas. Los ribosomas son los orgánulos donde ocurre la síntesis de proteínas (traducción)."
+    },
+    {
+      "question": "¿Qué son los ribosomas?",
+      "options": [
+        "Orgánulos formados solo por proteínas",
+        "Orgánulos formados por ARNr y proteínas",
+        "Tipos especiales de ADN",
+        "Enzimas de transcripción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los ribosomas son orgánulos formados por ARN ribosómico (ARNr) y proteínas ribosómicas. En su interior ocurre la síntesis de proteínas (traducción)."
+    },
+    {
+      "question": "¿Cómo se clasifican los ribosomas?",
+      "options": [
+        "Por su forma geométrica",
+        "Por su coeficiente de sedimentación en unidades Svedberg",
+        "Por su composición química",
+        "Por su localización celular"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los ribosomas se clasifican según su coeficiente de sedimentación en unidades Svedberg (S), que depende del peso y forma de la molécula durante procesos de centrifugación."
+    },
+    {
+      "question": "¿Cuántas subunidades tiene cada ribosoma?",
+      "options": [
+        "Una subunidad",
+        "Dos subunidades: una mayor y una menor",
+        "Tres subunidades",
+        "Cuatro subunidades"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cada ribosoma tiene dos subunidades: una subunidad mayor y una menor. Ambas contienen tanto ARNr como proteínas en diferentes cantidades."
+    },
+    {
+      "question": "¿Cuándo se unen las subunidades ribosómicas?",
+      "options": [
+        "Están siempre unidas",
+        "Solo se unen cuando entran en contacto con el ARNm",
+        "Durante la transcripción",
+        "Solo en la fase S del ciclo celular"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las subunidades ribosómicas solo se unen cuando entran en contacto con el ARNm para iniciar la traducción. En condiciones normales están separadas en el citoplasma."
+    },
+    {
+      "question": "¿Cuáles son los tres procesos fundamentales del dogma central de la biología molecular?",
+      "options": [
+        "Mitosis, meiosis y apoptosis",
+        "Replicación, transcripción y traducción",
+        "Respiración, fotosíntesis y fermentación",
+        "Digestión, absorción y metabolismo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El dogma central incluye: 1) Replicación (duplicar el ADN), 2) Transcripción (ADN→ARNm), y 3) Traducción (ARNm→proteína). Estos procesos permiten que la información genética se preserve y exprese."
+    },
+    {
+      "question": "¿Dónde está presente el ADN en eucariotas?",
+      "options": [
+        "Solo en el núcleo",
+        "En el núcleo, mitocondrias y cloroplastos",
+        "Solo en el citoplasma",
+        "En el núcleo y ribosomas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas, el ADN está presente en el núcleo, mitocondrias y cloroplastos. Es bicatenario y circular en mitocondrias y cloroplastos."
+    },
+    {
+      "question": "¿Cómo se encuentra el ADN en procariotas en mayor proporción?",
+      "options": [
+        "En forma de múltiples cromosomas lineales",
+        "En forma de un único cromosoma circular bicatenario llamado nucleoide",
+        "Solo en plásmidos",
+        "En forma lineal y monocatenario"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En procariotas, el ADN se encuentra en mayor proporción en forma de un único cromosoma circular y bicatenario, denominado nucleoide."
+    },
+    {
+      "question": "¿Qué son los plásmidos?",
+      "options": [
+        "Cromosomas principales de las bacterias",
+        "Pequeñas moléculas circulares bicatenarias de ADN",
+        "Organelas que contienen ADN",
+        "Fragmentos de ARN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los plásmidos son pequeñas moléculas circulares bicatenarias de ADN que se encuentran en menor proporción en procariotas. Puede haber uno o cientos dentro de una bacteria."
+    },
+    {
+      "question": "En virus, ¿el material genético puede estar en forma de...?",
+      "options": ["Solo ADN", "ADN o ARN", "Solo ARN", "Solo proteínas"],
+      "correctAnswer": 1,
+      "explanation": "En virus, el material genético puede estar en forma de ADN o de ARN, dependiendo del tipo de virus."
+    },
+    {
+      "question": "¿Cómo es generalmente la molécula de ADN viral?",
+      "options": [
+        "Bicatenaria y linear",
+        "Generalmente monocatenaria, circular o lineal",
+        "Siempre bicatenaria y circular",
+        "Tricatenaria"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La molécula de ADN viral es generalmente monocatenaria, puede ser circular o lineal, y está cubierta de proteínas."
+    },
+    {
+      "question": "¿Por qué descubrimientos recibieron Katalin Karikó y Drew Weissman el Premio Nobel de Medicina 2023?",
+      "options": [
+        "Por descubrir la estructura del ADN",
+        "Por modificaciones de bases que permitieron vacunas efectivas de ARN mensajero frente a COVID-19",
+        "Por la invención de la PCR",
+        "Por el descubrimiento del código genético"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Katalin Karikó y Drew Weissman recibieron el Premio Nobel por sus descubrimientos sobre las modificaciones de bases que permitieron el desarrollo de vacunas efectivas de ARN mensajero frente a COVID-19."
+    },
+    {
+      "question": "¿Qué tipo de proceso es la replicación del ADN?",
+      "options": [
+        "Conservativa",
+        "Semiconservativa",
+        "Dispersiva",
+        "No conservativa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La replicación es semiconservativa: cada hebra madre actúa como molde para sintetizar las hebras hijas, y cada hélice hija lleva una hebra hija y conserva una hebra madre."
+    },
+    {
+      "question": "¿Por qué la replicación se denomina semidiscontinua?",
+      "options": [
+        "Porque se detiene a veces",
+        "Porque una hebra se sintetiza de forma continua y otra a trozos",
+        "Porque solo replica la mitad del ADN",
+        "Porque ocurre en dos fases separadas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La replicación es semidiscontinua porque una hebra se sintetiza de forma continua (hebra líder) y otra se sintetiza a trozos (hebra retardada con fragmentos de Okazaki)."
+    },
+    {
+      "question": "¿Qué significa que la replicación es bidireccional?",
+      "options": [
+        "Que ocurre en dos células a la vez",
+        "Que el ADN se sintetiza en ambos sentidos",
+        "Que produce dos copias diferentes",
+        "Que requiere dos enzimas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La replicación es bidireccional porque el ADN se sintetiza en ambos sentidos a partir del punto de iniciación (OriC)."
+    },
+    {
+      "question": "¿Qué es el OriC en la replicación?",
+      "options": [
+        "Una enzima de replicación",
+        "El punto de iniciación de la replicación, rico en timina y adenina",
+        "El punto final de la replicación",
+        "Un tipo de ARN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OriC es el punto de iniciación de la replicación. Es una zona rica en secuencias de timina y adenina que marca el origen y el sentido de lectura."
+    },
+    {
+      "question": "¿Qué función tienen las helicasas en la replicación?",
+      "options": [
+        "Sintetizan nuevas hebras de ADN",
+        "Reconocen el punto de iniciación y rompen puentes de hidrógeno separando las hebras",
+        "Unen fragmentos de ADN",
+        "Corrigen errores"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las helicasas reconocen el punto de iniciación y avanzan rompiendo los puentes de hidrógeno entre bases nitrogenadas, separando las hebras como una cremallera."
+    },
+    {
+      "question": "¿Cuál es la función de las proteínas SSB?",
+      "options": [
+        "Sintetizar ADN",
+        "Evitar que las bases nitrogenadas separadas se vuelvan a unir",
+        "Cortar el ADN",
+        "Iniciar la replicación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las proteínas SSB (Single-strand binding protein) se unen a las hebras separadas para evitar que esas bases nitrogenadas se vuelvan a unir."
+    },
+    {
+      "question": "¿Qué son las topoisomerasas o girasas?",
+      "options": [
+        "Enzimas que cortan el ADN",
+        "Enzimas que alivian la tensión del superenrollamiento durante la apertura del ADN",
+        "Enzimas que sintetizan ARN",
+        "Proteínas estructurales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las topoisomerasas (también llamadas girasas) alivian la tensión del superenrollamiento que se crea en zonas próximas cuando se desenrolla el ADN."
+    },
+    {
+      "question": "¿Qué es la burbuja u horquilla de replicación?",
+      "options": [
+        "Un error en la replicación",
+        "La zona con dos hebras separadas y desenrolladas",
+        "Una enzima específica",
+        "El producto final de la replicación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La burbuja u horquilla de replicación es la estructura que se forma cuando las helicasas separan las hebras, creando una zona con dos hebras separadas y desenrolladas."
+    },
+    {
+      "question": "¿Qué es la primasa y qué sintetiza?",
+      "options": [
+        "Una enzima que sintetiza proteínas",
+        "Un tipo de ARN polimerasa que sintetiza un fragmento de 10 nucleótidos de ARN (cebador/primer)",
+        "Una enzima que corta ADN",
+        "Una proteína estructural"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La primasa es un tipo de ARN polimerasa que sintetiza un fragmento de 10 nucleótidos de ARN llamado cebador o primer, necesario para que la ADN polimerasa pueda comenzar."
+    },
+    {
+      "question": "¿Por qué es necesario el cebador (primer)?",
+      "options": [
+        "Para acelerar la replicación",
+        "Porque la ADN polimerasa no puede comenzar de cero, solo puede prolongar una cadena preexistente",
+        "Para corregir errores",
+        "Para unir fragmentos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El cebador es necesario porque la ADN polimerasa no puede iniciar una nueva hebra de cero, solo puede prolongar una preexistente. Necesita un extremo 3'-OH libre."
+    },
+    {
+      "question": "¿Cuáles son las dos funciones principales de la ADN polimerasa?",
+      "options": [
+        "Separar hebras y unir nucleótidos",
+        "Seleccionar y unir nucleótidos complementarios, y eliminar nucleótidos mal apareados (actividad exonucleasa)",
+        "Sintetizar ARN y ADN",
+        "Abrir la hélice y cerrarla"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ADN polimerasa tiene dos funciones: 1) Seleccionar y unir nucleótidos complementarios para formar la nueva cadena, y 2) Eliminar nucleótidos mal apareados mediante actividad exonucleasa."
+    },
+    {
+      "question": "¿Qué son las hebras conductoras o líder?",
+      "options": [
+        "Las hebras que se sintetizan discontinuamente",
+        "Las hebras que se sintetizan de forma continua sin interrupciones",
+        "Las hebras molde originales",
+        "Los fragmentos de Okazaki"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las hebras conductoras o líder son las hebras hijas que se sintetizan de forma continua sin interrupciones, cuando la ADN polimerasa recorre la hebra molde en sentido 3'→5'."
+    },
+    {
+      "question": "¿Qué son los fragmentos de Okazaki?",
+      "options": [
+        "Errores de replicación",
+        "Pequeños fragmentos de ADN sintetizados discontinuamente en las hebras retardadas",
+        "Fragmentos de ARN",
+        "Partes de la hebra molde"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los fragmentos de Okazaki son pequeños fragmentos de ADN que se sintetizan discontinuamente en las hebras retardadas, cuando la ADN polimerasa no puede trabajar de forma continua."
+    },
+    {
+      "question": "¿Qué función tiene la ADN ligasa?",
+      "options": [
+        "Separar las hebras de ADN",
+        "Unir los fragmentos de Okazaki mediante enlaces fosfodiéster",
+        "Sintetizar cebadores",
+        "Corregir errores"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ADN ligasa une los fragmentos de Okazaki al producir enlaces fosfodiéster entre ellos, completando la síntesis de la hebra retardada."
+    },
+    {
+      "question": "En la fase de terminación de la replicación, ¿qué hace la ADN polimerasa?",
+      "options": [
+        "Solo sintetiza nuevas hebras",
+        "Elimina cebadores, rellena huecos y corrige errores con actividad exonucleasa",
+        "Une fragmentos únicamente",
+        "Abre nuevas horquillas de replicación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la terminación, la ADN polimerasa elimina los cebadores, rellena los huecos resultantes con ADN y corrige errores mediante su actividad exonucleasa."
+    },
+    {
+      "question": "¿Qué consecuencia tiene que algunos errores de replicación no se corrijan?",
+      "options": [
+        "La célula muere inmediatamente",
+        "Crean mutaciones que pueden ser beneficiosas o perjudiciales para la evolución",
+        "No tiene ninguna consecuencia",
+        "Solo afecta a las proteínas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los errores no corregidos son muy importantes en la evolución ya que crean mutaciones que pueden ser beneficiosas o perjudiciales para el organismo."
+    },
+    {
+      "question": "¿Qué problema causa el envejecimiento relacionado con la replicación?",
+      "options": [
+        "Demasiados errores de replicación",
+        "El último cebador del extremo 5' no puede ser reemplazado",
+        "Las células se dividen muy rápido",
+        "Se acumula demasiado ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Una de las causas del envejecimiento es que el último cebador que se elimina del extremo 5' no puede ser reemplazado, lo que va acortando los cromosomas."
+    },
+    {
+      "question": "¿Dónde ocurre la replicación en eucariotas?",
+      "options": [
+        "En el citoplasma",
+        "En el núcleo",
+        "En los ribosomas",
+        "En las mitocondrias únicamente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas, la replicación ocurre en el núcleo donde se encuentra el ADN cromosómico."
+    },
+    {
+      "question": "¿Dónde ocurren la transcripción y traducción en eucariotas?",
+      "options": [
+        "Ambas en el citoplasma",
+        "Transcripción en el núcleo, traducción en ribosomas",
+        "Ambas en el núcleo",
+        "Transcripción en ribosomas, traducción en el núcleo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas, la transcripción ocurre en el núcleo y la traducción en los ribosomas del citoplasma."
+    },
+    {
+      "question": "¿Dónde ocurren todos los procesos (replicación, transcripción, traducción) en procariotas?",
+      "options": [
+        "En el núcleo",
+        "La replicación y transcripción en citoplasma, traducción en ribosomas",
+        "Todos en organelas",
+        "Solo en el nucleoide"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En procariotas, la replicación y transcripción ocurren en el citoplasma, mientras que la traducción ocurre en los ribosomas."
+    },
+    {
+      "question": "¿Qué es la transcripción?",
+      "options": [
+        "El proceso de síntesis de proteínas",
+        "El proceso por el cual a partir de ADN se sintetiza ARN",
+        "La duplicación del ADN",
+        "La unión de aminoácidos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La transcripción es el proceso por el cual a partir de una molécula de ADN se sintetiza una de ARN. Es el proceso de expresión génica."
+    },
+    {
+      "question": "¿Qué reconocen los factores de transcripción en la iniciación?",
+      "options": [
+        "Los ribosomas",
+        "La secuencia iniciadora o promotor",
+        "El ARN mensajero",
+        "Las proteínas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los factores de transcripción reconocen la secuencia iniciadora o promotor y se unen a ella para iniciar la transcripción."
+    },
+    {
+      "question": "¿Por qué el promotor es rico en timinas y adeninas?",
+      "options": [
+        "Porque son más abundantes",
+        "Porque solo se unen mediante dos puentes de hidrógeno, siendo más fácil de romper que C-G",
+        "Porque son más estables",
+        "Porque son específicas del ARN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El promotor es rico en timinas y adeninas porque solo se unen mediante dos puentes de hidrógeno, a diferencia de citosina-guanina que forman tres, siendo más fácil de romper."
+    },
+    {
+      "question": "En la elongación de la transcripción, ¿en qué sentido lee la ARN polimerasa la hebra molde?",
+      "options": [
+        "5' → 3'",
+        "3' → 5'",
+        "En ambos sentidos",
+        "No tiene dirección específica"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ARN polimerasa lee la hebra molde madre en sentido 3' → 5' y sintetiza la hebra hija de ARN en sentido 5' → 3'."
+    },
+    {
+      "question": "¿Cómo se llama la hebra que se transcribe?",
+      "options": [
+        "Hebra estabilizadora",
+        "Hebra codificadora",
+        "Hebra complementaria",
+        "Hebra madre"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La hebra que se transcribe se denomina hebra codificadora. La otra hebra, que no se transcribe, se denomina hebra estabilizadora."
+    },
+    {
+      "question": "¿Por qué el ARN sintetizado no se une por puentes de hidrógeno con el ADN molde?",
+      "options": [
+        "Porque no son complementarios",
+        "Porque la ARN polimerasa rompe los puentes de hidrógeno y mantiene separadas las hebras",
+        "Porque el ARN es más corto",
+        "Porque ocurre muy rápido"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ARN polimerasa rompe los puentes de hidrógeno que se forman entre el ARN y el ADN, manteniendo así separadas las hebras para que el ARN quede libre."
+    },
+    {
+      "question": "¿Qué es la terminación independiente de Rho?",
+      "options": [
+        "Un error de transcripción",
+        "La ARN polimerasa sintetiza una secuencia terminadora que se pliega y desestabiliza la polimerasa",
+        "La parada de la replicación",
+        "Un tipo de ARN especial"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la terminación independiente de Rho, la ARN polimerasa sintetiza una secuencia terminadora que se pliega, desestabiliza la ARN polimerasa y finaliza la síntesis."
+    },
+    {
+      "question": "En la terminación dependiente de Rho, ¿qué secuencia sintetiza la ARN polimerasa?",
+      "options": [
+        "Secuencia terminadora",
+        "Secuencia Rut",
+        "Secuencia promotora",
+        "Secuencia codificadora"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la terminación dependiente de Rho, la ARN polimerasa sintetiza una secuencia Rut a la cual se une el factor Rho."
+    },
+    {
+      "question": "¿Por qué las ARNasas son necesarias en el citoplasma?",
+      "options": [
+        "Para sintetizar más ARN",
+        "Para eliminar ARN ya usado y regular la síntesis de proteínas, liberar ribosomas y evitar sobrecarga",
+        "Para reparar el ADN",
+        "Para duplicar cromosomas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las ARNasas regulan eliminando el ARN ya usado para: 1) cesar síntesis innecesaria de proteínas, 2) liberar ribosomas, 3) evitar sobrecarga del citoplasma con ARNm."
+    },
+    {
+      "question": "¿Qué es la caperuza de metil guanosina?",
+      "options": [
+        "Un tipo de ARN",
+        "Un segmento protector añadido al extremo 5' del ARNm que lo protege y ayuda al reconocimiento ribosomal",
+        "Una enzima",
+        "Una base nitrogenada"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La caperuza de metil guanosina se une al extremo 5' del ARNm, protegiéndolo de las ARNasas y ayudando al ribosoma a reconocerlo."
+    },
+    {
+      "question": "¿Qué es la cola de poliadenina?",
+      "options": [
+        "Una secuencia de guaninas",
+        "Una cadena de unas 200 adeninas en el extremo 3' que protege al ARNm",
+        "Un tipo de proteína",
+        "Una enzima reguladora"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La cola de poliadenina es una cadena de unas 200 adeninas en el extremo 3' que protege al ARNm porque cuando las ARNasas lo atacan, atacan primero esta cola."
+    },
+    {
+      "question": "¿Qué son los intrones?",
+      "options": [
+        "Secuencias que se traducen",
+        "Secuencias que son eliminadas y no pasan a la traducción",
+        "Tipos de ARN",
+        "Enzimas de transcripción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los intrones son secuencias del ARN transcrito primario que son eliminadas durante la maduración y no pasan a la traducción."
+    },
+    {
+      "question": "¿Qué son los exones?",
+      "options": [
+        "Secuencias eliminadas",
+        "Secuencias que permanecen en el ARN y sí se traducen",
+        "Enzimas de corte",
+        "Tipos de ribosomas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los exones son las secuencias que sí permanecen en el ARN maduro y sí se traducen a proteínas."
+    },
+    {
+      "question": "¿Por qué NO hay maduración del ARN en procariotas?",
+      "options": [
+        "Porque no tienen ARN",
+        "Porque el ARNm ya está en el citoplasma y los ribosomas se unen directamente sin peligro de degradación",
+        "Porque no tienen ribosomas",
+        "Porque su ARN es diferente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En procariotas no hay maduración porque el ARNm ya está en el citoplasma donde ocurre la transcripción, y los ribosomas se unen directamente a él para la traducción."
+    },
+    {
+      "question": "¿Qué es la traducción?",
+      "options": [
+        "La duplicación del ADN",
+        "Un proceso biológico de síntesis de proteínas a partir del ARNm",
+        "La formación de ARN a partir de ADN",
+        "La unión de nucleótidos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La traducción es un proceso biológico de síntesis de proteínas a partir de la información contenida en el ARNm, que tiene lugar en los ribosomas."
+    },
+    {
+      "question": "En la traducción, ¿de qué lenguaje a qué lenguaje se pasa?",
+      "options": [
+        "De 20 letras a 4 letras",
+        "De un lenguaje de 4 letras (A,C,G,U) a un lenguaje de 20 letras (aminoácidos)",
+        "De ADN a ARN",
+        "De proteínas a carbohidratos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En la traducción se pasa de un lenguaje de 4 letras (las bases A,C,G,U del ARN) a un lenguaje de 20 letras (los 20 aminoácidos), y la equivalencia la establece el código genético."
+    },
+    {
+      "question": "¿Qué establece la equivalencia entre el ARNm y los aminoácidos?",
+      "options": [
+        "Los ribosomas",
+        "El código genético",
+        "Las proteínas",
+        "El ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El código genético establece la equivalencia entre tripletes de bases del ARNm (codones) y los aminoácidos en la síntesis de proteínas."
+    },
+    {
+      "question": "¿Dónde tiene lugar la traducción?",
+      "options": [
+        "En el núcleo",
+        "En los ribosomas del citoplasma",
+        "En el ADN",
+        "En las mitocondrias únicamente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La traducción tiene lugar en los ribosomas, que pueden estar libres en el citoplasma o asociados al retículo endoplasmático rugoso."
+    },
+    {
+      "question": "¿Qué son los codones?",
+      "options": [
+        "Secuencias de ADN",
+        "Tripletes de bases del ARNm que especifican aminoácidos",
+        "Tipos de proteínas",
+        "Partes del ribosoma"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los codones son tripletes de bases del ARNm que especifican qué aminoácido debe añadirse en cada posición durante la síntesis de proteínas."
+    },
+    {
+      "question": "¿Cuántas características tiene el código genético según el documento?",
+      "options": [
+        "3 características",
+        "5 características principales",
+        "2 características",
+        "7 características"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El código genético tiene varias características: es universal, no ambiguo, degenerado, continuo y no solapado, además de otras propiedades específicas."
+    },
+    {
+      "question": "¿Qué significa que el código genético es universal?",
+      "options": [
+        "Que solo funciona en humanos",
+        "Que es el mismo para todos los organismos",
+        "Que cambia según la especie",
+        "Que solo existe en eucariotas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El código genético es universal porque es el mismo para todos los organismos, aunque existen pequeñas excepciones como en las mitocondrias."
+    },
+    {
+      "question": "¿Qué significa que el código genético no es ambiguo?",
+      "options": [
+        "Que un aminoácido puede tener varios codones",
+        "Que cada codón codifica un único aminoácido",
+        "Que es difícil de entender",
+        "Que cambia constantemente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Que el código genético no es ambiguo significa que cada codón específico codifica para un único aminoácido determinado."
+    },
+    {
+      "question": "¿Qué significa que el código genético es degenerado?",
+      "options": [
+        "Que está dañado",
+        "Que la mayoría de aminoácidos están codificados por más de un codón",
+        "Que no funciona bien",
+        "Que solo tiene algunos codones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El código genético es degenerado porque la mayoría de aminoácidos están codificados por más de un codón, lo que proporciona redundancia y protección contra mutaciones."
+    },
+    {
+      "question": "¿Qué significa que el código genético es continuo y no solapado?",
+      "options": [
+        "Que tiene espacios entre codones",
+        "Que los codones se disponen secuencialmente sin espacios y sin compartir bases",
+        "Que se lee en ambas direcciones",
+        "Que algunos codones se superponen"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Continuo y no solapado significa que los codones se disponen de manera secuencial uno tras otro, sin espacios y sin compartir ninguna base nitrogenada."
+    },
+    {
+      "question": "¿Qué excepción tiene el código genético universal?",
+      "options": [
+        "No funciona en plantas",
+        "En las mitocondrias algunos codones codifican aminoácidos distintos",
+        "Solo funciona en procariotas",
+        "Cambia cada año"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La principal excepción al código genético universal es que en las mitocondrias algunos codones codifican para aminoácidos distintos que el resto de organismos."
+    },
+    {
+      "question": "¿Qué son los codones sinónimos?",
+      "options": [
+        "Codones que no funcionan",
+        "Diferentes codones que codifican para el mismo aminoácido",
+        "Codones de parada",
+        "Codones de inicio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los codones sinónimos son diferentes codones que codifican para el mismo aminoácido, lo cual es consecuencia del carácter degenerado del código genético."
+    },
+    {
+      "question": "¿Qué son las aminoacil ARNt sintetasas?",
+      "options": [
+        "Tipos de ARN",
+        "Enzimas que unen aminoácidos específicos a su ARNt correspondiente",
+        "Partes del ribosoma",
+        "Secuencias de ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las aminoacil ARNt sintetasas son enzimas que realizan la síntesis de las aminoacil ARNt, uniendo cada aminoácido específico a su ARNt correspondiente."
+    },
+    {
+      "question": "¿Qué bases se usan para unir un ARNt a su aminoácido correspondiente?",
+      "options": [
+        "Las bases del anticodón del ARNt",
+        "Las bases que habría/habrá en el codón del ARNm al que se una",
+        "Las bases del ribosoma",
+        "Bases aleatorias"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cuando se une un ARNt a su aminoácido correspondiente, se usan las bases que habría/habrá en el codón del ARNm al que se una, NO las del anticodón del ARNt."
+    },
+    {
+      "question": "¿Cuántos sitios de unión tiene la subunidad grande del ribosoma?",
+      "options": ["2 sitios", "3 sitios: A, P y E", "4 sitios", "5 sitios"],
+      "correctAnswer": 1,
+      "explanation": "La subunidad grande del ribosoma tiene 3 zonas de unión denominadas: sitio A (aminoacil), sitio P (peptidil) y sitio E (exit/salida)."
+    },
+    {
+      "question": "En la iniciación de la traducción, ¿qué anticodón debe tener el primer aminoacil ARNt?",
+      "options": ["AUG", "UAC", "UUU", "AAA"],
+      "correctAnswer": 1,
+      "explanation": "El primer aminoacil ARNt debe tener anticodón UAC para unirse al codón de iniciación AUG, llevando unida una metionina."
+    },
+    {
+      "question": "¿Cuál es el codón de iniciación universal?",
+      "options": ["UAC", "AUG", "UUU", "UAA"],
+      "correctAnswer": 1,
+      "explanation": "AUG es el codón de iniciación universal que codifica para metionina y marca el inicio de la traducción en todos los ARNm."
+    },
+    {
+      "question": "¿En qué sitio del ribosoma se coloca inicialmente el aminoacil ARNt de iniciación?",
+      "options": ["Sitio A", "Sitio P", "Sitio E", "Fuera del ribosoma"],
+      "correctAnswer": 1,
+      "explanation": "El aminoacil ARNt de iniciación se coloca en el sitio P (peptidil) de la subunidad grande del ribosoma cuando se forma el complejo de iniciación."
+    },
+    {
+      "question": "¿Cuántos pasos se repiten cíclicamente en la elongación?",
+      "options": ["2 pasos", "3 pasos", "4 pasos", "5 pasos"],
+      "correctAnswer": 1,
+      "explanation": "La elongación consta de 3 pasos que se repiten cíclicamente: 1) Unión de aminoacil ARNt al sitio A, 2) Formación de enlace peptídico, 3) Translocación."
+    },
+    {
+      "question": "¿Qué enzima forma el enlace peptídico entre aminoácidos?",
+      "options": [
+        "ARN polimerasa",
+        "Peptidil transferasa",
+        "ADN ligasa",
+        "Helicasa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La peptidil transferasa es la enzima que rompe el enlace éster del aminoacil ARNt y transfiere esa energía para formar el enlace peptídico entre aminoácidos."
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "name": "Estructura del Cuerpo Humano y Fisiopatología General",
+  "icon": "🫀",
+  "description": "Niveles de organización, anatomía y fisiología básica del cuerpo humano",
+  "questions": [
+    {
+      "question": "¿Cuáles son los cinco niveles jerárquicos de organización del cuerpo humano según el documento?",
+      "options": [
+        "Molecular, celular, tisular, orgánico, sistémico",
+        "Atómico, molecular, celular, anatómico, organismo vivo",
+        "Químico, biológico, celular, orgánico, corporal",
+        "Elemental, molecular, celular, tisular, corporal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los cinco niveles jerárquicos son: nivel atómico, nivel molecular, nivel celular, nivel anatómico y nivel organismo vivo, organizados desde lo más simple hasta lo más complejo."
+    },
+    {
+      "question": "¿Qué incluye el nivel anatómico de organización?",
+      "options": [
+        "Solo tejidos y órganos",
+        "Tejidos, órganos, sistemas y aparatos",
+        "Únicamente sistemas y aparatos",
+        "Solo células y moléculas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El nivel anatómico comprende cuatro estructuras principales: tejidos, órganos, sistemas y aparatos, que forman unidades estructurales y funcionales identificables visualmente."
+    },
+    {
+      "question": "¿Cuál es la densidad corporal según el documento?",
+      "options": [
+        "La cantidad de masa por unidad de tiempo",
+        "La relación entre la masa y el volumen corporal",
+        "La cantidad de espacio que ocupa el cuerpo",
+        "El peso total del organismo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La densidad corporal se define como la relación entre la masa y el volumen corporal, expresada en g/cm³ o kg/m³."
+    },
+    {
+      "question": "¿Qué elementos químicos principales menciona el documento en el nivel atómico?",
+      "options": [
+        "Carbono, hidrógeno, oxígeno, calcio, potasio, sodio",
+        "Carbono, hidrógeno, oxígeno, nitrógeno, azufre, fósforo",
+        "Carbono, oxígeno, nitrógeno, hierro, calcio, magnesio",
+        "Hidrógeno, oxígeno, carbono, cloro, sodio, potasio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los elementos químicos principales del cuerpo humano son: carbono, hidrógeno, oxígeno, nitrógeno, azufre y fósforo, que forman la base de todas las moléculas orgánicas."
+    },
+    {
+      "question": "¿Qué característica fundamental tienen los niveles atómico y molecular?",
+      "options": [
+        "Tienen funciones vitales básicas",
+        "Son sustancias químicas sin funciones vitales",
+        "Solo se encuentran en células vivas",
+        "Pueden reproducirse independientemente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los niveles atómico y molecular son niveles más elementales que consisten en sustancias químicas que no tienen funciones vitales (no se nutren, no se reproducen)."
+    },
+    {
+      "question": "Según el documento, ¿qué es la hidroxiapatita?",
+      "options": [
+        "Una proteína estructural",
+        "Un lípido de membrana",
+        "Un fosfato cálcico que forma el cristal principal de huesos y dientes",
+        "Un tipo de agua estructurada"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La hidroxiapatita es un fosfato cálcico que constituye el cristal principal de huesos y dientes, siendo un componente fundamental del nivel molecular."
+    },
+    {
+      "question": "¿Cuáles son las moléculas inorgánicas mencionadas en el nivel molecular?",
+      "options": [
+        "Agua y proteínas",
+        "Agua y sales minerales",
+        "Sales minerales y lípidos",
+        "Proteínas y vitaminas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las moléculas inorgánicas del organismo humano son el agua y las sales minerales, a diferencia de las moléculas orgánicas como glúcidos, lípidos, proteínas y vitaminas."
+    },
+    {
+      "question": "¿Qué componentes incluye el nivel celular?",
+      "options": [
+        "Solo el interior de las células",
+        "Solo el exterior de las células",
+        "Componentes intracelulares y extracelulares",
+        "Únicamente las membranas celulares"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El nivel celular incluye tanto los componentes intracelulares (dentro de las células) como los extracelulares (fuera de las células)."
+    },
+    {
+      "question": "¿Cuál es la definición de célula según el documento?",
+      "options": [
+        "La unidad más pequeña de la materia",
+        "La estructura más pequeña que realiza las funciones vitales",
+        "El componente básico de los tejidos",
+        "La unidad fundamental de reproducción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Según el documento, la célula es la estructura más pequeña que realiza las funciones vitales, por lo que se considera 'la unidad mínima de la vida'."
+    },
+    {
+      "question": "¿Cuáles son las tres funciones vitales tradicionales que debe realizar una célula?",
+      "options": [
+        "Crecimiento, desarrollo, muerte",
+        "Nutrición, relación, reproducción",
+        "Respiración, digestión, circulación",
+        "Metabolismo, síntesis, degradación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las tres funciones vitales tradicionales son: nutrición (tomar sustancias nutritivas y expulsar desechos), relación (recibir información del entorno y responder), y reproducción (crear nuevos seres semejantes)."
+    },
+    {
+      "question": "¿Qué ejemplos da el documento de entidades que están en la zona intermedia entre la vida y la materia inerte?",
+      "options": [
+        "Bacterias y hongos",
+        "Virus y priones",
+        "Células madre y células diferenciadas",
+        "Proteínas y ácidos nucleicos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los virus (se relacionan y reproducen pero no se nutren) y los priones (solo se reproducen, no se nutren ni se relacionan) están en la zona intermedia entre la vida y la materia inerte."
+    },
+    {
+      "question": "¿Cómo define el documento un tejido?",
+      "options": [
+        "Un grupo de células diferentes que trabajan juntas",
+        "Un conjunto de células del mismo tipo que realizan trabajo fisiológico coordinado",
+        "Una estructura formada solo por células y matriz extracelular",
+        "Un componente básico de los órganos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un tejido es un conjunto de células que son del mismo tipo y que juntas realizan un trabajo fisiológico coordinado, constituyendo una unidad funcional y estructural."
+    },
+    {
+      "question": "¿Cuál es la diferencia principal entre sistemas y aparatos según el documento?",
+      "options": [
+        "Los sistemas son más complejos que los aparatos",
+        "Los sistemas están formados por los mismos tipos de tejidos, los aparatos pueden tener tejidos muy diferentes",
+        "Los aparatos son más pequeños que los sistemas",
+        "No hay diferencia real entre ambos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los sistemas son agrupaciones de órganos formados por los mismos tipos de tejidos, mientras que los aparatos son conjuntos de órganos que pueden ser de tejidos muy diferentes pero actúan coordinadamente."
+    },
+    {
+      "question": "En el nivel organismo vivo, ¿cómo difiere la función de relación comparada con la celular?",
+      "options": [
+        "Es exactamente igual",
+        "Detecta una gran variedad de estímulos internos y externos vs. estímulos muy limitados",
+        "Solo detecta estímulos externos",
+        "Es más simple que en las células"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A nivel de organismo vivo, la función de relación detecta una gran variedad de estímulos tanto interiores como exteriores, mientras que a nivel celular detecta y responde a una serie de estímulos muy limitados."
+    },
+    {
+      "question": "¿Qué estudia la anatomía según el documento?",
+      "options": [
+        "Solo la forma de los órganos",
+        "La estructura, forma, topografía, ubicación y relación de los órganos, sistemas y aparatos",
+        "Únicamente las funciones de los seres vivos",
+        "Solo las enfermedades del cuerpo humano"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La anatomía estudia la estructura de los seres vivos, incluyendo la forma, topografía, ubicación, disposición y relación entre los distintos órganos, sistemas y aparatos."
+    },
+    {
+      "question": "¿Qué significa estar 'en bipedestación'?",
+      "options": [
+        "Estar sentado",
+        "Estar de pie",
+        "Estar acostado",
+        "Estar en movimiento"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bipedestación significa estar de pie, una de las posiciones anatómicas básicas junto con sedestación (sentado) y decúbito (tumbado)."
+    },
+    {
+      "question": "¿Cuáles son los tipos de decúbito mencionados en el documento?",
+      "options": [
+        "Superior, inferior y lateral",
+        "Supino (boca arriba), prono (boca abajo) y lateral",
+        "Anterior, posterior y medial",
+        "Proximal, distal y central"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los tipos de decúbito son: supino (boca arriba), prono (boca abajo) y lateral (derecho o izquierdo)."
+    },
+    {
+      "question": "¿Por qué es necesaria la posición anatómica de referencia?",
+      "options": [
+        "Para que el paciente esté cómodo",
+        "Para que todas las indicaciones sean inequívocas",
+        "Para facilitar los exámenes médicos",
+        "Para evitar confusiones con la terminología"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La posición anatómica de referencia es necesaria para que todas las indicaciones anatómicas sean inequívocas y no puedan interpretarse de distinta forma."
+    },
+    {
+      "question": "¿Cómo se describe la posición anatómica estándar?",
+      "options": [
+        "De pie con brazos cruzados",
+        "De pie con brazos extendidos, palmas hacia delante y pies dirigidos hacia delante",
+        "Sentado con brazos relajados",
+        "De pie con brazos a los lados y palmas hacia atrás"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La posición anatómica estándar consiste en estar de pie con los brazos extendidos a lo largo del cuerpo, palmas hacia delante y pies también dirigidos hacia delante."
+    },
+    {
+      "question": "¿Cuáles son los tres ejes del espacio utilizados para los planos de referencia?",
+      "options": [
+        "Superior-inferior, anterior-posterior, medial-lateral",
+        "Vertical/cráneo-caudal, horizontal/latero-lateral, anteroposterior/ventro-dorsal",
+        "Proximal-distal, superficial-profundo, interno-externo",
+        "Craneal-caudal, ventral-dorsal, izquierdo-derecho"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los tres ejes son: vertical o longitudinal (cráneo-caudal), horizontal (latero-lateral) y anteroposterior (ventro-dorsal), que permiten definir los planos de referencia del cuerpo."
+    },
+    {
+      "question": "¿Cuáles son los cinco niveles jerárquicos de organización del cuerpo humano según el documento?",
+      "options": [
+        "Molecular, celular, tisular, orgánico, sistémico",
+        "Atómico, molecular, celular, anatómico, organismo vivo",
+        "Químico, biológico, celular, orgánico, corporal",
+        "Elemental, molecular, celular, tisular, corporal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los cinco niveles jerárquicos son: nivel atómico, nivel molecular, nivel celular, nivel anatómico y nivel organismo vivo, organizados desde lo más simple hasta lo más complejo."
+    },
+    {
+      "question": "¿Qué incluye el nivel anatómico de organización?",
+      "options": [
+        "Solo tejidos y órganos",
+        "Tejidos, órganos, sistemas y aparatos",
+        "Únicamente sistemas y aparatos",
+        "Solo células y moléculas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El nivel anatómico comprende cuatro estructuras principales: tejidos, órganos, sistemas y aparatos, que forman unidades estructurales y funcionales identificables visualmente."
+    },
+    {
+      "question": "¿Cuál es la densidad corporal según el documento?",
+      "options": [
+        "La cantidad de masa por unidad de tiempo",
+        "La relación entre la masa y el volumen corporal",
+        "La cantidad de espacio que ocupa el cuerpo",
+        "El peso total del organismo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La densidad corporal se define como la relación entre la masa y el volumen corporal, expresada en g/cm³ o kg/m³."
+    },
+    {
+      "question": "¿Qué elementos químicos principales menciona el documento en el nivel atómico?",
+      "options": [
+        "Carbono, hidrógeno, oxígeno, calcio, potasio, sodio",
+        "Carbono, hidrógeno, oxígeno, nitrógeno, azufre, fósforo",
+        "Carbono, oxígeno, nitrógeno, hierro, calcio, magnesio",
+        "Hidrógeno, oxígeno, carbono, cloro, sodio, potasio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los elementos químicos principales del cuerpo humano son: carbono, hidrógeno, oxígeno, nitrógeno, azufre y fósforo, que forman la base de todas las moléculas orgánicas."
+    },
+    {
+      "question": "¿Qué característica fundamental tienen los niveles atómico y molecular?",
+      "options": [
+        "Tienen funciones vitales básicas",
+        "Son sustancias químicas sin funciones vitales",
+        "Solo se encuentran en células vivas",
+        "Pueden reproducirse independientemente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los niveles atómico y molecular son niveles más elementales que consisten en sustancias químicas que no tienen funciones vitales (no se nutren, no se reproducen)."
+    },
+    {
+      "question": "Según el documento, ¿qué es la hidroxiapatita?",
+      "options": [
+        "Una proteína estructural",
+        "Un lípido de membrana",
+        "Un fosfato cálcico que forma el cristal principal de huesos y dientes",
+        "Un tipo de agua estructurada"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La hidroxiapatita es un fosfato cálcico que constituye el cristal principal de huesos y dientes, siendo un componente fundamental del nivel molecular."
+    },
+    {
+      "question": "¿Cuáles son las moléculas inorgánicas mencionadas en el nivel molecular?",
+      "options": [
+        "Agua y proteínas",
+        "Agua y sales minerales",
+        "Sales minerales y lípidos",
+        "Proteínas y vitaminas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las moléculas inorgánicas del organismo humano son el agua y las sales minerales, a diferencia de las moléculas orgánicas como glúcidos, lípidos, proteínas y vitaminas."
+    },
+    {
+      "question": "¿Qué componentes incluye el nivel celular?",
+      "options": [
+        "Solo el interior de las células",
+        "Solo el exterior de las células",
+        "Componentes intracelulares y extracelulares",
+        "Únicamente las membranas celulares"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El nivel celular incluye tanto los componentes intracelulares (dentro de las células) como los extracelulares (fuera de las células)."
+    },
+    {
+      "question": "¿Cuál es la definición de célula según el documento?",
+      "options": [
+        "La unidad más pequeña de la materia",
+        "La estructura más pequeña que realiza las funciones vitales",
+        "El componente básico de los tejidos",
+        "La unidad fundamental de reproducción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Según el documento, la célula es la estructura más pequeña que realiza las funciones vitales, por lo que se considera 'la unidad mínima de la vida'."
+    },
+    {
+      "question": "¿Cuáles son las tres funciones vitales tradicionales que debe realizar una célula?",
+      "options": [
+        "Crecimiento, desarrollo, muerte",
+        "Nutrición, relación, reproducción",
+        "Respiración, digestión, circulación",
+        "Metabolismo, síntesis, degradación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las tres funciones vitales tradicionales son: nutrición (tomar sustancias nutritivas y expulsar desechos), relación (recibir información del entorno y responder), y reproducción (crear nuevos seres semejantes)."
+    },
+    {
+      "question": "¿Qué ejemplos da el documento de entidades que están en la zona intermedia entre la vida y la materia inerte?",
+      "options": [
+        "Bacterias y hongos",
+        "Virus y priones",
+        "Células madre y células diferenciadas",
+        "Proteínas y ácidos nucleicos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los virus (se relacionan y reproducen pero no se nutren) y los priones (solo se reproducen, no se nutren ni se relacionan) están en la zona intermedia entre la vida y la materia inerte."
+    },
+    {
+      "question": "¿Cómo define el documento un tejido?",
+      "options": [
+        "Un grupo de células diferentes que trabajan juntas",
+        "Un conjunto de células del mismo tipo que realizan trabajo fisiológico coordinado",
+        "Una estructura formada solo por células y matriz extracelular",
+        "Un componente básico de los órganos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Un tejido es un conjunto de células que son del mismo tipo y que juntas realizan un trabajo fisiológico coordinado, constituyendo una unidad funcional y estructural."
+    },
+    {
+      "question": "¿Cuál es la diferencia principal entre sistemas y aparatos según el documento?",
+      "options": [
+        "Los sistemas son más complejos que los aparatos",
+        "Los sistemas están formados por los mismos tipos de tejidos, los aparatos pueden tener tejidos muy diferentes",
+        "Los aparatos son más pequeños que los sistemas",
+        "No hay diferencia real entre ambos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los sistemas son agrupaciones de órganos formados por los mismos tipos de tejidos, mientras que los aparatos son conjuntos de órganos que pueden ser de tejidos muy diferentes pero actúan coordinadamente."
+    },
+    {
+      "question": "En el nivel organismo vivo, ¿cómo difiere la función de relación comparada con la celular?",
+      "options": [
+        "Es exactamente igual",
+        "Detecta una gran variedad de estímulos internos y externos vs. estímulos muy limitados",
+        "Solo detecta estímulos externos",
+        "Es más simple que en las células"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A nivel de organismo vivo, la función de relación detecta una gran variedad de estímulos tanto interiores como exteriores, mientras que a nivel celular detecta y responde a una serie de estímulos muy limitados."
+    },
+    {
+      "question": "¿Qué estudia la anatomía según el documento?",
+      "options": [
+        "Solo la forma de los órganos",
+        "La estructura, forma, topografía, ubicación y relación de los órganos, sistemas y aparatos",
+        "Únicamente las funciones de los seres vivos",
+        "Solo las enfermedades del cuerpo humano"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La anatomía estudia la estructura de los seres vivos, incluyendo la forma, topografía, ubicación, disposición y relación entre los distintos órganos, sistemas y aparatos."
+    },
+    {
+      "question": "¿Qué significa estar 'en bipedestación'?",
+      "options": [
+        "Estar sentado",
+        "Estar de pie",
+        "Estar acostado",
+        "Estar en movimiento"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bipedestación significa estar de pie, una de las posiciones anatómicas básicas junto con sedestación (sentado) y decúbito (tumbado)."
+    },
+    {
+      "question": "¿Cuáles son los tipos de decúbito mencionados en el documento?",
+      "options": [
+        "Superior, inferior y lateral",
+        "Supino (boca arriba), prono (boca abajo) y lateral",
+        "Anterior, posterior y medial",
+        "Proximal, distal y central"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los tipos de decúbito son: supino (boca arriba), prono (boca abajo) y lateral (derecho o izquierdo)."
+    },
+    {
+      "question": "¿Por qué es necesaria la posición anatómica de referencia?",
+      "options": [
+        "Para que el paciente esté cómodo",
+        "Para que todas las indicaciones sean inequívocas",
+        "Para facilitar los exámenes médicos",
+        "Para evitar confusiones con la terminología"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La posición anatómica de referencia es necesaria para que todas las indicaciones anatómicas sean inequívocas y no puedan interpretarse de distinta forma."
+    },
+    {
+      "question": "¿Cómo se describe la posición anatómica estándar?",
+      "options": [
+        "De pie con brazos cruzados",
+        "De pie con brazos extendidos, palmas hacia delante y pies dirigidos hacia delante",
+        "Sentado con brazos relajados",
+        "De pie con brazos a los lados y palmas hacia atrás"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La posición anatómica estándar consiste en estar de pie con los brazos extendidos a lo largo del cuerpo, palmas hacia delante y pies también dirigidos hacia delante."
+    },
+    {
+      "question": "¿Cuáles son los tres ejes del espacio utilizados para los planos de referencia?",
+      "options": [
+        "Superior-inferior, anterior-posterior, medial-lateral",
+        "Vertical/cráneo-caudal, horizontal/latero-lateral, anteroposterior/ventro-dorsal",
+        "Proximal-distal, superficial-profundo, interno-externo",
+        "Craneal-caudal, ventral-dorsal, izquierdo-derecho"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los tres ejes son: vertical o longitudinal (cráneo-caudal), horizontal (latero-lateral) y anteroposterior (ventro-dorsal), que permiten definir los planos de referencia del cuerpo."
+    },
+    {
+      "question": "¿Cuáles son los tres principales planos de referencia del cuerpo humano?",
+      "options": [
+        "Frontal, sagital y transverso",
+        "Coronal, lateral y horizontal",
+        "Anterior, posterior y medial",
+        "Superior, inferior y lateral"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Los tres principales planos de referencia son: frontales/coronales (dividen en anterior-posterior), sagitales (dividen en derecha-izquierda) y transversos/horizontales (dividen en superior-inferior)."
+    },
+    {
+      "question": "¿Qué divide el plano sagital medio?",
+      "options": [
+        "El cuerpo en anterior y posterior",
+        "El cuerpo en superior e inferior",
+        "El cuerpo en partes derecha e izquierda iguales",
+        "El cuerpo en superficial y profundo"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El plano medio sagital discurre centralmente en el cuerpo y lo divide en igual medida en las zonas izquierda y derecha, creando una simetría bilateral perfecta."
+    },
+    {
+      "question": "¿Qué significan los términos 'anterior' y 'ventral'?",
+      "options": [
+        "Indican la superficie posterior del cuerpo",
+        "Indican la superficie frontal del cuerpo",
+        "Indican la parte superior del cuerpo",
+        "Indican los lados del cuerpo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Anterior o ventral indican la superficie frontal del cuerpo. Por ejemplo, el esternón está situado en la parte anterior del tronco."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre 'medial' y 'lateral'?",
+      "options": [
+        "Medial está más cerca de la línea media, lateral más alejado",
+        "Medial está más alejado, lateral más cerca",
+        "Medial es superior, lateral es inferior",
+        "Medial es anterior, lateral es posterior"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Medial indica que una estructura está más próxima a la línea media del cuerpo (ej: columna vertebral es medial), mientras que lateral indica que está más alejada del plano medio hacia los lados."
+    },
+    {
+      "question": "¿Qué indican los términos 'proximal' y 'distal'?",
+      "options": [
+        "Cercanía o lejanía de la superficie corporal",
+        "Cercanía o lejanía del tronco",
+        "Cercanía o lejanía de la cabeza",
+        "Cercanía o lejanía del plano medio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Proximal indica la parte más cercana al tronco (ej: el codo es proximal respecto a la mano), mientras que distal indica la parte más alejada del cuerpo (ej: la mano es distal respecto al hombro)."
+    },
+    {
+      "question": "¿Qué movimientos describen los términos 'flexión' y 'extensión'?",
+      "options": [
+        "Girar hacia arriba o abajo",
+        "Alejar o acercar del eje corporal",
+        "Disminuir o aumentar el ángulo de una articulación",
+        "Rotar interna o externamente"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Flexión significa disminuir el ángulo formado por una articulación, mientras que extensión significa aumentar dicho ángulo articular."
+    },
+    {
+      "question": "¿Qué diferencia hay entre 'supinación' y 'pronación'?",
+      "options": [
+        "Movimientos de la cabeza",
+        "Girar el antebrazo hacia arriba o hacia abajo",
+        "Movimientos de la columna",
+        "Flexión y extensión del pie"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Supinación es girar el antebrazo hacia arriba (palma hacia arriba), mientras que pronación es girarlo hacia abajo (palma hacia abajo)."
+    },
+    {
+      "question": "¿Qué significan 'abducción' y 'aducción'?",
+      "options": [
+        "Flexión y extensión",
+        "Alejamiento y acercamiento de una extremidad del eje del cuerpo",
+        "Rotación interna y externa",
+        "Movimientos hacia arriba y abajo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Abducción es el alejamiento de una extremidad del eje del cuerpo, mientras que aducción es el acercamiento de la extremidad hacia el eje corporal."
+    },
+    {
+      "question": "¿En cuántas regiones principales se divide el cuerpo humano?",
+      "options": [
+        "Dos: tronco y extremidades",
+        "Tres: cabeza, tronco y extremidades",
+        "Cuatro: cabeza, cuello, tronco y extremidades",
+        "Cinco: cabeza, cuello, tórax, abdomen y extremidades"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El cuerpo se divide en tres regiones principales: la cabeza (cráneo y cara), el tronco (tórax y abdomen) y las extremidades (superiores e inferiores)."
+    },
+    {
+      "question": "¿Cuáles son las principales cavidades internas mencionadas?",
+      "options": [
+        "Solo craneal y torácica",
+        "Craneal, torácica y abdominal",
+        "Craneana, raquídea, torácica, abdominal y pelviana",
+        "Torácica, abdominal y pélvica únicamente"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Las principales cavidades internas son: craneana (encéfalo), raquídea (cerebelo y médula espinal), torácica (esófago, pulmones y corazón), abdominal y pelviana (órganos digestivos y reproductivos)."
+    },
+    {
+      "question": "¿Qué órganos se encuentran en la cavidad torácica?",
+      "options": [
+        "Solo corazón y pulmones",
+        "Esófago, pulmones y corazón",
+        "Estómago, hígado y pulmones",
+        "Corazón, riñones y pulmones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La cavidad torácica contiene el esófago, los pulmones (en las cavidades pleurales) y el corazón (en el mediastino junto con los grandes vasos)."
+    },
+    {
+      "question": "¿Qué estructura separa el tórax del abdomen?",
+      "options": [
+        "Las costillas",
+        "El esternón",
+        "El diafragma",
+        "La columna vertebral"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El diafragma es la estructura muscular con forma de paracaídas que delimita el tórax por su cara ventral, separándolo de la cavidad abdominal."
+    },
+    {
+      "question": "¿Cuáles son los dos sistemas principales para dividir topográficamente el abdomen?",
+      "options": [
+        "Superior-inferior y anterior-posterior",
+        "Modelo de nueve áreas y modelo de cuatro cuadrantes",
+        "Derecha-izquierda y superior-inferior",
+        "Proximal-distal y medial-lateral"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los dos sistemas más utilizados para describir la ubicación de órganos abdominales son el modelo de nueve áreas (regiones) y el modelo de cuatro cuadrantes."
+    },
+    {
+      "question": "¿Qué funciones destacan en las extremidades superiores?",
+      "options": [
+        "Solo locomoción",
+        "Psicomotricidad fina y tacto",
+        "Únicamente sostén corporal",
+        "Solo funciones de equilibrio"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las extremidades superiores destacan por funciones relacionadas con la psicomotricidad fina (manipulación de pequeños objetos, escritura) y el tacto."
+    },
+    {
+      "question": "¿Qué estudia la fisiopatología?",
+      "options": [
+        "Solo las funciones normales del cuerpo",
+        "Las funciones fisiológicas alteradas por procesos patológicos, físicos o químicos",
+        "Únicamente las enfermedades",
+        "Solo la anatomía corporal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La fisiopatología estudia las funciones fisiológicas alteradas por procesos patológicos (enfermedades), físicos o químicos, comparándolas con la situación normal."
+    },
+    {
+      "question": "¿Cuáles son los cuatro procesos que incluye la función de nutrición?",
+      "options": [
+        "Respiración, circulación, digestión, metabolismo",
+        "Digestión, respiración, circulación, excreción",
+        "Absorción, transporte, metabolismo, eliminación",
+        "Ingestión, digestión, absorción, defecación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La función de nutrición incluye: digestión (obtener nutrientes), respiración (obtener oxígeno), circulación (transportar sustancias) y excreción (eliminar residuos)."
+    },
+    {
+      "question": "¿Cuáles son las tres fases de la función de relación?",
+      "options": [
+        "Estímulo, procesamiento, respuesta",
+        "Percepción, elaboración de la respuesta, respuesta",
+        "Captación, análisis, ejecución",
+        "Recepción, integración, acción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La función de relación tiene tres fases: percepción (captación de estímulos externos e internos), elaboración de la respuesta y ejecución de dicha respuesta."
+    },
+    {
+      "question": "¿Qué sistemas participan en la función de relación según el documento?",
+      "options": [
+        "Solo sistema nervioso",
+        "Sistema nervioso y muscular únicamente",
+        "Órganos de los sentidos, sistema nervioso, sistema circulatorio y sistema inmunitario",
+        "Sistema nervioso, digestivo y respiratorio"
+      ],
+      "correctAnswer": 2,
+      "explanation": "En la función de relación participan: órganos de los sentidos (captación), sistema nervioso (procesamiento y transmisión), sistema circulatorio (transporte de hormonas) y sistema inmunitario (defensa)."
+    }
+  ]
+}

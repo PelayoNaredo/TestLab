@@ -1,0 +1,436 @@
+{
+  "name": "Examen Completo - Biologia Molecular",
+  "icon": "🧬",
+  "description": "Test integral de Biología Molecular y Citogenética - 50 preguntas clave seleccionadas",
+  "questions": [
+    {
+      "question": "¿Cuáles son las dos funciones principales de los ácidos nucleicos?",
+      "options": [
+        "Síntesis de lípidos y metabolismo energético",
+        "Almacenar, transmitir y expresar la información genética",
+        "Formar membranas celulares y regular pH",
+        "Catalizar reacciones enzimáticas y transporte"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los ácidos nucleicos son macromoléculas poliméricas que almacenan, transmiten y expresan la información genética de los seres vivos, siendo fundamental para la vida."
+    },
+    {
+      "question": "¿Por qué componentes está formado un nucleótido?",
+      "options": [
+        "Base nitrogenada, hexosa y grupo sulfato",
+        "Base nitrogenada, pentosa y ácido fosfórico",
+        "Aminoácido, glucosa y fosfato",
+        "Purina, ribosa y grupo carboxilo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los nucleótidos, unidades estructurales de los ácidos nucleicos, están formados por una base nitrogenada, una pentosa y una molécula de ácido fosfórico."
+    },
+    {
+      "question": "¿Cuál es la principal diferencia entre las pentosas del ADN y ARN?",
+      "options": [
+        "El ADN tiene ribosa, el ARN desoxirribosa",
+        "El ADN tiene desoxirribosa, el ARN ribosa",
+        "Ambos tienen la misma pentosa",
+        "El ADN tiene fructosa, el ARN glucosa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ADN contiene desoxirribosa (le falta un -OH en el carbono 2'), mientras que el ARN contiene ribosa (tiene -OH en carbonos 2' y 3')."
+    },
+    {
+      "question": "¿Cuántos puentes de hidrógeno forman las parejas A-T y C-G respectivamente?",
+      "options": [
+        "3 y 2 puentes respectivamente",
+        "2 y 3 puentes respectivamente",
+        "2 y 2 puentes respectivamente",
+        "3 y 3 puentes respectivamente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La adenina-timina forma 2 puentes de hidrógeno, mientras que citosina-guanina forma 3 puentes, haciendo esta unión más estable."
+    },
+    {
+      "question": "¿Qué establece la Ley de Chargaff?",
+      "options": [
+        "El ADN es más estable que el ARN",
+        "En ADN bicatenario: cantidad de A = T y cantidad de C = G",
+        "Los nucleótidos se unen por enlaces covalentes",
+        "El ARN deriva siempre del ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La Ley de Chargaff establece que en cualquier ADN bicatenario, la cantidad de adenina igual a timina y citosina igual a guanina, debido al emparejamiento complementario."
+    },
+    {
+      "question": "¿Quiénes propusieron el modelo de la doble hélice del ADN y en qué año?",
+      "options": [
+        "Franklin y Wilkins en 1951",
+        "Watson y Crick en 1953",
+        "Chargaff y Pauling en 1955",
+        "Mendel y Darwin en 1950"
+      ],
+      "correctAnswer": 1,
+      "explanation": "James Watson y Francis Crick propusieron el modelo de la doble hélice en 1953, basándose en datos de difracción de rayos X de Rosalind Franklin."
+    },
+    {
+      "question": "¿Por qué el empaquetamiento del ADN en eucariotas requiere histonas?",
+      "options": [
+        "Para acelerar la replicación",
+        "Porque la cantidad de ADN es muy grande y necesita compactación compleja",
+        "Para proteger contra mutaciones",
+        "Solo para la transcripción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas, la enorme cantidad de ADN requiere un empaquetamiento complejo y compacto mediante histonas y otras proteínas para caber en el núcleo."
+    },
+    {
+      "question": "¿Qué es un nucleosoma?",
+      "options": [
+        "Una enzima de replicación",
+        "La unidad básica de empaquetamiento del ADN con histonas",
+        "Un tipo de ARN regulador",
+        "Una proteína de transcripción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El nucleosoma es la unidad básica de empaquetamiento donde el ADN se enrolla alrededor de un núcleo de histonas, fundamental en la organización cromosómica."
+    },
+    {
+      "question": "¿Por qué el ARN mensajero necesita caperuza y cola de poliadenina en eucariotas?",
+      "options": [
+        "Para acelerar la traducción",
+        "Para protegerse de las ARNasas del citoplasma y facilitar reconocimiento ribosomal",
+        "Para unirse mejor al ADN",
+        "Para duplicarse más rápido"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La caperuza y cola protegen al ARNm de las ARNasas citoplasmáticas y ayudan al reconocimiento por ribosomas, esencial para la supervivencia del mensaje."
+    },
+    {
+      "question": "¿Qué son los intrones y exones?",
+      "options": [
+        "Intrones se traducen, exones se eliminan",
+        "Intrones se eliminan, exones se traducen",
+        "Ambos se traducen por igual",
+        "Son tipos diferentes de ARN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los intrones son secuencias eliminadas durante la maduración (splicing), mientras que los exones permanecen en el ARN maduro y se traducen."
+    },
+    {
+      "question": "¿Cuál es la característica de la replicación del ADN?",
+      "options": [
+        "Conservativa y continua",
+        "Semiconservativa y semidiscontinua",
+        "Dispersiva y unidireccional",
+        "No conservativa y discontinua"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La replicación es semiconservativa (cada hebra nueva lleva una hebra original) y semidiscontinua (una continua, otra en fragmentos de Okazaki)."
+    },
+    {
+      "question": "¿Qué función tienen las helicasas en la replicación?",
+      "options": [
+        "Sintetizan nuevas hebras de ADN",
+        "Rompen puentes de hidrógeno y separan las hebras del ADN",
+        "Unen fragmentos de Okazaki",
+        "Corrigen errores de emparejamiento"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las helicasas son enzimas que rompen los puentes de hidrógeno entre bases complementarias, abriendo la doble hélice como una cremallera."
+    },
+    {
+      "question": "¿Por qué es necesario el cebador (primer) en la replicación?",
+      "options": [
+        "Para acelerar el proceso",
+        "Porque la ADN polimerasa no puede iniciar síntesis de novo, solo prolongar",
+        "Para corregir errores",
+        "Para marcar el final"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El cebador es esencial porque la ADN polimerasa solo puede añadir nucleótidos a un extremo 3'-OH preexistente, no puede iniciar desde cero."
+    },
+    {
+      "question": "¿Qué caracteriza a los fragmentos de Okazaki?",
+      "options": [
+        "Se forman en la hebra líder",
+        "Son fragmentos cortos de ADN en la hebra retardada",
+        "Son errores de replicación",
+        "Solo aparecen en procariotas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los fragmentos de Okazaki son segmentos cortos de ADN sintetizados discontinuamente en la hebra retardada debido a la direccionalidad 5'→3' obligatoria."
+    },
+    {
+      "question": "¿Dónde ocurren replicación, transcripción y traducción en eucariotas?",
+      "options": [
+        "Todos en el citoplasma",
+        "Replicación y transcripción en núcleo, traducción en ribosomas",
+        "Todos en el núcleo",
+        "Replicación en núcleo, otros en citoplasma"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas, la replicación y transcripción ocurren en el núcleo (donde está el ADN), mientras que la traducción ocurre en ribosomas citoplasmáticos."
+    },
+    {
+      "question": "¿Por qué el promotor es rico en adenina y timina?",
+      "options": [
+        "Porque son más abundantes en el genoma",
+        "Porque forman solo 2 puentes de hidrógeno, más fácil de separar que C-G",
+        "Porque son más estables",
+        "Porque atraen mejor la ARN polimerasa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los pares A-T tienen solo 2 puentes de hidrógeno vs 3 de C-G, haciendo más fácil la separación de hebras necesaria para iniciar la transcripción."
+    },
+    {
+      "question": "¿En qué dirección lee la ARN polimerasa la hebra molde y sintetiza el ARN?",
+      "options": [
+        "Lee 5'→3', sintetiza 3'→5'",
+        "Lee 3'→5', sintetiza 5'→3'",
+        "Lee ambas direcciones",
+        "No tiene direccionalidad específica"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ARN polimerasa siempre lee la hebra molde en dirección 3'→5' y sintetiza el nuevo ARN en dirección 5'→3', manteniendo antiparalelismo."
+    },
+    {
+      "question": "¿Qué es la traducción y dónde ocurre?",
+      "options": [
+        "Síntesis de ADN en el núcleo",
+        "Síntesis de proteínas a partir de ARNm en ribosomas",
+        "Formación de ARN en el citoplasma",
+        "Duplicación cromosómica"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La traducción es el proceso de síntesis de proteínas usando la información del ARNm como molde, realizándose en los ribosomas del citoplasma."
+    },
+    {
+      "question": "¿Qué caracteriza al código genético como 'degenerado'?",
+      "options": [
+        "Que está dañado o corrupto",
+        "Que varios codones pueden codificar el mismo aminoácido",
+        "Que no funciona correctamente",
+        "Que solo funciona en algunas especies"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Degenerado significa redundante: múltiples codones pueden especificar el mismo aminoácido, proporcionando protección contra mutaciones puntuales."
+    },
+    {
+      "question": "¿Cuál es el codón de inicio universal y qué aminoácido especifica?",
+      "options": [
+        "UAC que especifica tirosina",
+        "AUG que especifica metionina",
+        "UUU que especifica fenilalanina",
+        "UAA que es de parada"
+      ],
+      "correctAnswer": 1,
+      "explanation": "AUG es el codón de inicio universal que especifica metionina y señala dónde debe comenzar la traducción en todos los organismos."
+    },
+    {
+      "question": "¿Cuántos sitios tiene la subunidad grande del ribosoma y cuáles son?",
+      "options": [
+        "2 sitios: A y P",
+        "3 sitios: A (aminoacil), P (peptidil) y E (exit)",
+        "4 sitios: A, P, E y S",
+        "5 sitios diferentes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La subunidad grande tiene 3 sitios: A (donde llegan aminoacil-ARNt), P (donde se forma el péptido) y E (salida de ARNt vacíos)."
+    },
+    {
+      "question": "¿Qué enzima forma los enlaces peptídicos durante la traducción?",
+      "options": [
+        "ARN polimerasa",
+        "Peptidil transferasa",
+        "ADN ligasa",
+        "Aminoacil-ARNt sintetasa"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La peptidil transferasa es la actividad enzimática ribosomal que cataliza la formación de enlaces peptídicos entre aminoácidos durante la síntesis proteica."
+    },
+    {
+      "question": "¿Qué diferencia principal existe entre procariotas y eucariotas respecto a la maduración del ARN?",
+      "options": [
+        "Procariotas tienen maduración más compleja",
+        "Procariotas NO tienen maduración del ARN",
+        "Ambos tienen la misma maduración",
+        "Solo difieren en la velocidad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los procariotas NO necesitan maduración del ARN porque la transcripción y traducción son simultáneas en el citoplasma, sin peligro de degradación."
+    },
+    {
+      "question": "¿Por qué Katalin Karikó y Drew Weissman recibieron el Premio Nobel de Medicina 2023?",
+      "options": [
+        "Por descubrir la estructura del ADN",
+        "Por modificaciones de bases para vacunas efectivas de ARNm contra COVID-19",
+        "Por inventar la PCR",
+        "Por descifrar el código genético"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Recibieron el Nobel por sus descubrimientos sobre modificaciones de bases nucleotídicas que permitieron desarrollar vacunas efectivas de ARN mensajero frente al COVID-19."
+    },
+    {
+      "question": "¿Qué problema relacionado con el envejecimiento menciona el documento sobre la replicación?",
+      "options": [
+        "Demasiados errores acumulados",
+        "El último cebador del extremo 5' no puede ser reemplazado",
+        "Las células se dividen muy lentamente",
+        "Se produce demasiado ADN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Una causa del envejecimiento es que el último cebador de ARN eliminado del extremo 5' no puede ser reemplazado por ADN, acortando progresivamente los cromosomas."
+    },
+    {
+      "question": "¿Cuál es la función de las aminoacil-ARNt sintetasas?",
+      "options": [
+        "Duplicar el ADN",
+        "Unir cada aminoácido específico con su ARNt correspondiente",
+        "Formar ribosomas",
+        "Transcribir genes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Estas enzimas especializadas 'cargan' cada ARNt con su aminoácido específico, manteniendo la fidelidad en la traducción del código genético."
+    },
+    {
+      "question": "¿Qué son las topoisomerasas o girasas?",
+      "options": [
+        "Enzimas que cortan ADN",
+        "Enzimas que alivian la tensión del superenrollamiento durante la replicación",
+        "Enzimas que sintetizan ARN",
+        "Proteínas estructurales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las topoisomerasas alivian las tensiones generadas por el superenrollamiento cuando las helicasas desenrollan la doble hélice durante la replicación."
+    },
+    {
+      "question": "¿Qué característica del código genético permite que existan mutaciones silenciosas?",
+      "options": [
+        "Que es universal",
+        "Que es degenerado (codones sinónimos)",
+        "Que es continuo",
+        "Que no es ambiguo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La degeneración permite que cambios en la tercera base del codón no alteren la proteína final si el nuevo codón codifica el mismo aminoácido."
+    },
+    {
+      "question": "¿En qué se diferencian las hebras líder y retardada durante la replicación?",
+      "options": [
+        "Una es de ADN y otra de ARN",
+        "Una se sintetiza continuamente, otra discontinuamente en fragmentos",
+        "Una es más larga que la otra",
+        "Una contiene más errores"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La hebra líder se sintetiza continuamente en dirección 5'→3', mientras la retardada se sintetiza discontinuamente en fragmentos de Okazaki."
+    },
+    {
+      "question": "¿Qué especificidad importante tienen las aminoacil-ARNt sintetasas?",
+      "options": [
+        "Solo reconocen ADN",
+        "Reconocen específicamente un aminoácido y su ARNt correspondiente",
+        "Trabajan solo con ribosomas",
+        "Solo funcionan en eucariotas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cada sintetasa reconoce específicamente un aminoácido particular y su ARNt correspondiente, garantizando la precisión en la carga de aminoácidos."
+    },
+    {
+      "question": "¿Por qué el ARN es generalmente monocatenario pero puede parecer bicatenario?",
+      "options": [
+        "Porque siempre forma dobles hélices",
+        "Porque se pliega sobre sí mismo en zonas complementarias formando horquillas",
+        "Porque se une a proteínas",
+        "Porque se duplica constantemente"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El ARN monocatenario puede formar estructuras secundarias plegándose sobre sí mismo donde hay secuencias complementarias, creando regiones de doble cadena."
+    },
+    {
+      "question": "¿Cuál es la principal diferencia en localización del ADN entre eucariotas y procariotas?",
+      "options": [
+        "Eucariotas solo en citoplasma, procariotas en núcleo",
+        "Eucariotas en núcleo/organelas, procariotas en citoplasma (nucleoide)",
+        "Ambos en el mismo lugar",
+        "No hay diferencias"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En eucariotas el ADN está en núcleo y organelas (mitocondrias/cloroplastos), mientras en procariotas está libre en el citoplasma formando el nucleoide."
+    },
+    {
+      "question": "¿Qué función cumple la ADN ligasa?",
+      "options": [
+        "Separar hebras de ADN",
+        "Unir fragmentos de Okazaki mediante enlaces fosfodiéster",
+        "Sintetizar cebadores",
+        "Abrir la doble hélice"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La ADN ligasa une los fragmentos de Okazaki creando enlaces fosfodiéster entre ellos, completando la síntesis de la hebra retardada."
+    },
+    {
+      "question": "¿Qué son los plásmidos?",
+      "options": [
+        "Cromosomas principales de bacterias",
+        "Pequeñas moléculas circulares de ADN extracromosómico en procariotas",
+        "Orgánulos con ADN",
+        "Tipos de ARN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Los plásmidos son moléculas pequeñas, circulares y autorreplicantes de ADN que existen independientemente del cromosoma principal en procariotas."
+    },
+    {
+      "question": "¿Cuál es una función clave de las proteínas SSB durante la replicación?",
+      "options": [
+        "Sintetizar ADN",
+        "Evitar que las hebras separadas se vuelvan a unir",
+        "Corregir errores",
+        "Iniciar la replicación"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las proteínas SSB (Single Strand Binding) se unen a las hebras simples de ADN separadas por las helicasas, impidiendo que se reasocien."
+    },
+    {
+      "question": "¿Qué diferencia fundamental existe entre la terminación de transcripción dependiente e independiente de Rho?",
+      "options": [
+        "Una usa ARN, otra usa ADN",
+        "Una usa secuencia terminadora que se pliega, otra usa factor Rho que se une a secuencia Rut",
+        "Una es más rápida que otra",
+        "Solo difieren en eucariotas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La independiente de Rho usa una secuencia terminadora que forma horquilla y desestabiliza la polimerasa; la dependiente usa el factor Rho que se une a secuencia Rut."
+    },
+    {
+      "question": "¿Por qué es importante que el código genético sea universal?",
+      "options": [
+        "Solo funciona en laboratorio",
+        "Permite intercambio genético entre especies y biotecnología",
+        "Hace que las mutaciones sean imposibles",
+        "Solo beneficia a los humanos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La universalidad del código genético permite técnicas biotecnológicas como expresar genes humanos en bacterias, base de la ingeniería genética moderna."
+    },
+    {
+      "question": "¿Cuál es el papel del cariotipo en el diagnóstico?",
+      "options": [
+        "Solo sirve para clasificar especies",
+        "Permite detectar alteraciones cromosómicas numéricas y estructurales",
+        "Solo identifica el sexo",
+        "No tiene aplicaciones médicas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El análisis del cariotipo es fundamental para diagnosticar síndromes cromosómicos, aneuploidías y alteraciones estructurales como translocaciones o deleciones."
+    },
+    {
+      "question": "¿Qué proceso permite que la información del ADN llegue finalmente a formar proteínas?",
+      "options": [
+        "Solo la replicación",
+        "La secuencia completa: replicación → transcripción → traducción",
+        "Solo la transcripción",
+        "Únicamente la traducción"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El dogma central de la biología molecular describe cómo la información fluye desde ADN → ARN (transcripción) → Proteína (traducción), permitiendo la expresión génica."
+    }
+  ]
+}

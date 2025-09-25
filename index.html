@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <div id="app">
         <!-- Loading Screen -->
         <div id="loading-screen" class="screen active">
@@ -47,22 +49,46 @@
                 </header>
                 <div class="test-types-grid">
                     <div class="test-type-card" data-type="sequential">
-                        <div class="card-icon">📚</div>
+                        <div class="card-icon">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="hover"
+                                style="width:100px;height:100px">
+                            </lord-icon>
+                        </div>
                         <h3>Test Secuencial</h3>
                         <p>Preguntas en orden, ideal para estudio progresivo</p>
                     </div>
                     <div class="test-type-card" data-type="random">
-                        <div class="card-icon">🎲</div>
+                        <div class="card-icon">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/pbrgppbb.json"
+                                trigger="hover"
+                                style="width:100px;height:100px">
+                            </lord-icon>
+                        </div>
                         <h3>Test Aleatorio</h3>
                         <p>Preguntas en orden aleatorio para práctica general</p>
                     </div>
                     <div class="test-type-card" data-type="errors">
-                        <div class="card-icon">❌</div>
+                        <div class="card-icon">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/nrtqvbpe.json"
+                                trigger="hover"
+                                style="width:100px;height:100px">
+                            </lord-icon>
+                        </div>
                         <h3>Test de Errores</h3>
                         <p>Solo preguntas que has fallado anteriormente</p>
                     </div>
                     <div class="test-type-card" data-type="timed">
-                        <div class="card-icon">⏱️</div>
+                        <div class="card-icon">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/qznlhdss.json"
+                                trigger="hover"
+                                style="width:100px;height:100px">
+                            </lord-icon>
+                        </div>
                         <h3>Test Cronometrado</h3>
                         <p>Modo examen con tiempo limitado por pregunta</p>
                     </div>

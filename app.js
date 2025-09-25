@@ -221,19 +221,23 @@ class TestLab {
             inAnimation = direction === 'forward' ? 'animate__slideInRight' : 'animate__slideInLeft';
             outAnimation = direction === 'forward' ? 'animate__slideOutLeft' : 'animate__slideOutRight';
         }
-        
+
         if (currentScreen) {
+            currentScreen.style.zIndex = 1;
             currentScreen.classList.add('animate__animated', outAnimation);
             currentScreen.addEventListener('animationend', () => {
                 currentScreen.classList.remove('active');
                 currentScreen.classList.remove('animate__animated', outAnimation);
+                currentScreen.style.zIndex = '';
             }, { once: true });
         }
 
+        nextScreen.style.zIndex = 2;
         nextScreen.classList.add('active');
         nextScreen.classList.add('animate__animated', inAnimation);
         nextScreen.addEventListener('animationend', () => {
             nextScreen.classList.remove('animate__animated', inAnimation);
+            nextScreen.style.zIndex = '';
         }, { once: true });
     }
 

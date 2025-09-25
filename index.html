@@ -18,6 +18,10 @@
   </head>
   <body>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles-container"></div>
+
     <div id="app">
       <!-- Loading Screen -->
       <div id="loading-screen" class="screen active">
@@ -31,8 +35,15 @@
       <div id="subject-screen" class="screen">
         <div class="container">
           <header class="header">
-            <h1>TestLab</h1>
-            <p>Selecciona una materia para comenzar</p>
+            <div class="header-title-container">
+              <h1>TestLab</h1>
+              <img
+                src="assets/hello-kitty-donut-hello-kitty.gif"
+                alt="Hello Kitty Teacher"
+                class="header-kitty"
+              />
+            </div>
+            <p>Selecciona una materia para comenzar.</p>
           </header>
           <div class="subjects-grid" id="subjects-grid">
             <!-- Subjects will be loaded dynamically -->
@@ -130,9 +141,14 @@
               </svg>
               Volver
             </button>
-            <div class="test-progress">
-              <span id="current-question">1</span> /
-              <span id="total-questions">10</span>
+            <div class="test-info">
+              <div class="test-progress">
+                <span id="current-question">1</span> /
+                <span id="total-questions">10</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
             </div>
             <div class="test-timer" id="test-timer" style="display: none">
               <svg
@@ -153,12 +169,13 @@
           <div class="test-content">
             <div class="question-card">
               <h2 id="question-text">Pregunta aparecerá aquí</h2>
-              <div
-                id="question-image"
-                class="question-image"
-                style="display: none"
-              >
-                <img id="question-img" src="" alt="Imagen de la pregunta" />
+              <div id="question-gif-container" class="question-gif-container">
+                <img
+                  id="question-gif"
+                  src="assets/helocuti-hihihuhu.gif"
+                  alt="Hello Kitty GIF"
+                  class="question-gif"
+                />
               </div>
             </div>
 
@@ -196,7 +213,13 @@
         <div class="container">
           <div class="results-content">
             <div class="results-header">
-              <div class="results-icon" id="results-icon">🎉</div>
+              <div class="results-icon" id="results-icon">
+                <img
+                  src="assets/hello-kitty-pixel-art.gif"
+                  alt="Hello Kitty Pixel Art"
+                  class="results-gif"
+                />
+              </div>
               <h1 id="results-title">¡Test Completado!</h1>
             </div>
 

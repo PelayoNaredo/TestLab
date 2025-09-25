@@ -26,9 +26,9 @@ class TestLab {
       // Load subjects from tests folder
       const subjectFiles = [
         "BMC_U2.json",
-        "BMC_U2_examen.json", 
+        "BMC_U2_examen.json",
         "FG_UD1.json",
-        "FG_UD1_examen.json"
+        "FG_UD1_examen.json",
       ];
 
       for (const file of subjectFiles) {
@@ -401,6 +401,12 @@ class TestLab {
     document.getElementById("total-questions").textContent =
       this.currentQuestions.length;
 
+    // Update progress bar
+    const progressPercentage =
+      ((this.currentQuestionIndex + 1) / this.currentQuestions.length) * 100;
+    const progressBar = document.getElementById("progress-bar");
+    progressBar.style.width = `${progressPercentage}%`;
+
     // Animate and display question
     const questionCard = document.querySelector("#test-screen .question-card");
     questionCard.classList.add("animate__animated", "animate__slideInLeft");
@@ -417,16 +423,8 @@ class TestLab {
 
     document.getElementById("question-text").textContent = question.question;
 
-    // Handle question image if exists
-    const questionImage = document.getElementById("question-image");
-    const questionImg = document.getElementById("question-img");
-    if (question.image) {
-      questionImg.src = question.image;
-      questionImg.alt = "Imagen de la pregunta";
-      questionImage.style.display = "block";
-    } else {
-      questionImage.style.display = "none";
-    }
+    // Reset question GIF to default state
+    this.updateQuestionGif("default");
 
     // Display answers
     this.displayAnswers(question);
@@ -499,12 +497,42 @@ class TestLab {
     document.getElementById("next-question").disabled = false;
     document.getElementById("show-explanation").style.display = "inline-block";
 
+    // Update GIF based on correct/incorrect answer
+    const question = this.currentQuestions[this.currentQuestionIndex];
+    const isCorrect = answerIndex === question.shuffledCorrectAnswer;
+    this.updateQuestionGif(isCorrect ? "correct" : "incorrect");
+
     // Show correct/incorrect feedback
     this.showAnswerFeedback();
 
     // Stop timer if timed test
     if (this.currentTestType === "timed") {
       this.stopQuestionTimer();
+    }
+  }
+
+  updateQuestionGif(state) {
+    const questionGif = document.getElementById("question-gif");
+
+    // Remove existing animation classes
+    questionGif.classList.remove("correct", "incorrect");
+
+    // Update GIF source and add animation class based on state
+    switch (state) {
+      case "default":
+        questionGif.src = "assets/helocuti-hihihuhu.gif";
+        questionGif.alt = "Hello Kitty Default";
+        break;
+      case "correct":
+        questionGif.src = "assets/hello.gif";
+        questionGif.alt = "Hello Kitty Correct";
+        questionGif.classList.add("correct");
+        break;
+      case "incorrect":
+        questionGif.src = "assets/nunu.gif";
+        questionGif.alt = "Hello Kitty Incorrect";
+        questionGif.classList.add("incorrect");
+        break;
     }
   }
 
@@ -649,36 +677,23 @@ class TestLab {
     ).textContent = `${correctAnswers}/${totalQuestions}`;
     document.getElementById("time-taken").textContent = testDuration;
 
-    // Update results icon and title based on performance
-    const resultsIconContainer = document.getElementById("results-icon");
+    // Update results title based on performance
     const resultsTitle = document.getElementById("results-title");
     const resultsContent = document.querySelector(".results-content");
     resultsContent.classList.remove("success-animation");
 
-    let iconSrc = "";
     if (percentage >= 90) {
-      iconSrc = "https://cdn.lordicon.com/trovagwf.json";
       resultsTitle.textContent = "¡Excelente trabajo!";
       resultsContent.classList.add("success-animation");
     } else if (percentage >= 70) {
-      iconSrc = "https://cdn.lordicon.com/soseozvi.json";
       resultsTitle.textContent = "¡Bien hecho!";
     } else if (percentage >= 50) {
-      iconSrc = "https://cdn.lordicon.com/xyboiuok.json";
       resultsTitle.textContent = "¡Buen intento!";
     } else {
-      iconSrc = "https://cdn.lordicon.com/wxnxiano.json";
       resultsTitle.textContent = "¡Sigue practicando!";
     }
 
-    resultsIconContainer.innerHTML = `
-            <lord-icon
-                src="${iconSrc}"
-                trigger="loop"
-                delay="1000"
-                style="width:150px;height:150px">
-            </lord-icon>
-        `;
+    // El icono de Hello Kitty se mantiene siempre igual
   }
 
   formatTime(milliseconds) {
@@ -700,4 +715,44 @@ class TestLab {
 // Initialize the application when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   new TestLab();
+  createParticles();
 });
+
+// Particles Animation
+function createParticles() {
+  const particlesContainer = document.getElementById("particles-container");
+  const particleCount = 50; // Número de partículas
+
+  function createParticle() {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+
+    // Tamaño aleatorio entre 2px y 8px
+    const size = Math.random() * 6 + 2;
+    particle.style.width = size + "px";
+    particle.style.height = size + "px";
+
+    // Posición horizontal aleatoria
+    particle.style.left = Math.random() * 100 + "%";
+
+    // Duración de animación aleatoria
+    const duration = Math.random() * 10 + 8; // Entre 8 y 18 segundos
+    particle.style.animationDuration = duration + "s";
+
+    // Retraso aleatorio
+    particle.style.animationDelay = Math.random() * 5 + "s";
+
+    particlesContainer.appendChild(particle);
+
+    // Eliminar la partícula cuando termine la animación y crear una nueva
+    particle.addEventListener("animationend", () => {
+      particle.remove();
+      createParticle();
+    });
+  }
+
+  // Crear partículas iniciales
+  for (let i = 0; i < particleCount; i++) {
+    setTimeout(() => createParticle(), i * 200);
+  }
+}

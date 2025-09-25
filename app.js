@@ -17,7 +17,7 @@ class TestLab {
     async init() {
         await this.loadSubjects();
         this.setupEventListeners();
-        this.showScreen('subject-screen');
+        this.showScreen('subject-screen', 'forward');
     }
 
     async loadSubjects() {
@@ -211,7 +211,7 @@ class TestLab {
 
         if (currentScreen && currentScreen.id === screenId) return;
 
-        const isInitialLoad = currentScreen && currentScreen.id === 'loading-screen';
+        const isInitialLoad = !currentScreen;
 
         let inAnimation, outAnimation;
         if (isInitialLoad) {
@@ -222,7 +222,6 @@ class TestLab {
             outAnimation = direction === 'forward' ? 'animate__slideOutLeft' : 'animate__slideOutRight';
         }
         
-        // Animate out current screen
         if (currentScreen) {
             currentScreen.classList.add('animate__animated', outAnimation);
             currentScreen.addEventListener('animationend', () => {
@@ -231,7 +230,6 @@ class TestLab {
             }, { once: true });
         }
 
-        // Animate in next screen
         nextScreen.classList.add('active');
         nextScreen.classList.add('animate__animated', inAnimation);
         nextScreen.addEventListener('animationend', () => {
@@ -320,7 +318,13 @@ class TestLab {
         document.getElementById('current-question').textContent = this.currentQuestionIndex + 1;
         document.getElementById('total-questions').textContent = this.currentQuestions.length;
 
-        // Display question
+        // Animate and display question
+        const questionCard = document.querySelector('#test-screen .question-card');
+        questionCard.classList.add('animate__animated', 'animate__slideInLeft');
+        questionCard.addEventListener('animationend', () => {
+            questionCard.classList.remove('animate__animated', 'animate__slideInLeft');
+        }, { once: true });
+
         document.getElementById('question-text').textContent = question.question;
         
         // Handle question image if exists

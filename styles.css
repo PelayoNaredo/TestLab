@@ -37,7 +37,7 @@ body {
 
 /* Screen Management */
 .screen {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -46,7 +46,6 @@ body {
     overflow: hidden;
     z-index: 1;
     transition: visibility 0.5s;
-    overflow-y: auto; /* Allow vertical scrolling on screens
 }
 
 .screen.active {
@@ -103,7 +102,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    min-height: 100vh; /* Changed from height to min-height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -297,7 +296,6 @@ body {
     padding: 2.5rem;
     box-shadow: 5px 5px 0px var(--border-color);
     border: 3px solid var(--border-color);
-    animation: slideInLeft 0.6s ease-out;
 }
 
 @keyframes slideInLeft {

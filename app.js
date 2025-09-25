@@ -6,6 +6,9 @@ class TestLab {
     this.currentQuestions = [];
     this.currentQuestionIndex = 0;
     this.userAnswers = [];
+    this.questionStates = []; // 'unanswered', 'answered', 'visited'
+    this.visitedQuestions = new Set();
+    this.shuffledAnswers = []; // Guardar el orden aleatorizado de cada pregunta
     this.testStartTime = null;
     this.timer = null;
     this.timePerQuestion = 30; // seconds for timed tests
@@ -201,6 +204,8 @@ class TestLab {
     document
       .getElementById("back-to-test-types")
       .addEventListener("click", () => {
+        // Stop continuous timer when leaving test
+        this.stopContinuousTimer();
         this.showScreen("test-type-screen", "backward");
       });
 
@@ -225,8 +230,15 @@ class TestLab {
         this.showExplanation();
       });
 
-    document.getElementById("next-question").addEventListener("click", () => {
-      this.nextQuestion();
+    // Header navigation buttons
+    document
+      .getElementById("next-question-header")
+      .addEventListener("click", () => {
+        this.nextQuestion();
+      });
+
+    document.getElementById("prev-question").addEventListener("click", () => {
+      this.prevQuestion();
     });
 
     document.getElementById("restart-test").addEventListener("click", () => {
@@ -377,12 +389,22 @@ class TestLab {
   startTest() {
     this.testStartTime = Date.now();
 
-    // Setup timer for timed tests
-    if (this.currentTestType === "timed") {
-      document.getElementById("test-timer").style.display = "flex";
-    } else {
-      document.getElementById("test-timer").style.display = "none";
-    }
+    // Initialize question states
+    this.userAnswers = new Array(this.currentQuestions.length).fill(undefined);
+    this.questionStates = new Array(this.currentQuestions.length).fill(
+      "unanswered"
+    );
+    this.visitedQuestions.clear();
+    this.shuffledAnswers = new Array(this.currentQuestions.length).fill(null);
+
+    // Setup timer - always visible for all test types
+    document.getElementById("test-timer").style.display = "flex";
+
+    // Start continuous timer for the entire test
+    this.startContinuousTimer();
+
+    // Create question status grid
+    this.createQuestionStatusGrid();
 
     this.displayQuestion();
   }
@@ -423,40 +445,61 @@ class TestLab {
 
     document.getElementById("question-text").textContent = question.question;
 
+    // Mark current question as visited
+    this.visitedQuestions.add(this.currentQuestionIndex);
+
     // Reset question GIF to default state
     this.updateQuestionGif("default");
 
     // Display answers
     this.displayAnswers(question);
 
-    // Hide elements that should not be visible initially
+    // Hide elements that should not be visible initially (unless previously answered)
+    const hasAnswer = this.userAnswers[this.currentQuestionIndex] !== undefined;
     document.getElementById("question-explanation").style.display = "none";
-    document.getElementById("show-explanation").style.display = "none";
-    document.getElementById("next-question").disabled = true;
+    document.getElementById("show-explanation").style.display = hasAnswer
+      ? "inline-block"
+      : "none";
 
-    // Start timer for timed tests
-    if (this.currentTestType === "timed") {
-      this.startQuestionTimer();
-    }
+    // Update navigation buttons
+    this.updateNavigationButtons();
+
+    // Timer continues running, no need to restart for each question
   }
 
   displayAnswers(question) {
     const answersContainer = document.getElementById("answers-container");
     answersContainer.innerHTML = "";
 
-    // Crear un array de opciones con sus índices originales
-    const optionsWithIndexes = question.options.map((option, index) => ({
-      text: option,
-      originalIndex: index,
-    }));
+    let shuffledOptions;
+    let newCorrectIndex;
 
-    // Aleatorizar las opciones
-    const shuffledOptions = this.shuffleArray(optionsWithIndexes);
+    // Verificar si ya tenemos el orden aleatorizado para esta pregunta
+    if (this.shuffledAnswers[this.currentQuestionIndex] === null) {
+      // Primera vez que visitamos esta pregunta, aleatorizar y guardar
+      const optionsWithIndexes = question.options.map((option, index) => ({
+        text: option,
+        originalIndex: index,
+      }));
 
-    // Encontrar el nuevo índice de la respuesta correcta
-    const newCorrectIndex = shuffledOptions.findIndex(
-      (option) => option.originalIndex === question.correctAnswer
-    );
+      shuffledOptions = this.shuffleArray(optionsWithIndexes);
+
+      // Encontrar el nuevo índice de la respuesta correcta
+      newCorrectIndex = shuffledOptions.findIndex(
+        (option) => option.originalIndex === question.correctAnswer
+      );
+
+      // Guardar el orden aleatorizado y la respuesta correcta para esta pregunta
+      this.shuffledAnswers[this.currentQuestionIndex] = {
+        options: shuffledOptions,
+        correctAnswerIndex: newCorrectIndex,
+      };
+    } else {
+      // Usar el orden aleatorizado ya guardado
+      const savedData = this.shuffledAnswers[this.currentQuestionIndex];
+      shuffledOptions = savedData.options;
+      newCorrectIndex = savedData.correctAnswerIndex;
+    }
 
     // Actualizar el índice de la respuesta correcta para esta pregunta
     question.shuffledCorrectAnswer = newCorrectIndex;
@@ -476,6 +519,29 @@ class TestLab {
       answerOption.addEventListener("click", () => this.selectAnswer(index));
       answersContainer.appendChild(answerOption);
     });
+
+    // Restore previous answer selection if exists
+    const previousAnswer = this.userAnswers[this.currentQuestionIndex];
+    if (previousAnswer !== undefined) {
+      const selectedOption = document.querySelector(
+        `.answer-option[data-answer-index="${previousAnswer}"]`
+      );
+      if (selectedOption) {
+        selectedOption.classList.add("selected");
+        document.getElementById("show-explanation").style.display =
+          "inline-block";
+
+        // Show answer feedback for previously answered questions
+        this.showAnswerFeedback();
+
+        // Update GIF state
+        const isCorrect = previousAnswer === question.shuffledCorrectAnswer;
+        this.updateQuestionGif(isCorrect ? "correct" : "incorrect");
+      }
+    }
+
+    // Update question status grid
+    this.updateQuestionStatusGrid();
   }
 
   selectAnswer(answerIndex) {
@@ -492,10 +558,14 @@ class TestLab {
 
     // Store user answer
     this.userAnswers[this.currentQuestionIndex] = answerIndex;
+    this.questionStates[this.currentQuestionIndex] = "answered";
 
-    // Enable next button and show explanation button
-    document.getElementById("next-question").disabled = false;
+    // Enable explanation button
     document.getElementById("show-explanation").style.display = "inline-block";
+
+    // Update navigation buttons and status grid
+    this.updateNavigationButtons();
+    this.updateQuestionStatusGrid();
 
     // Update GIF based on correct/incorrect answer
     const question = this.currentQuestions[this.currentQuestionIndex];
@@ -505,10 +575,7 @@ class TestLab {
     // Show correct/incorrect feedback
     this.showAnswerFeedback();
 
-    // Stop timer if timed test
-    if (this.currentTestType === "timed") {
-      this.stopQuestionTimer();
-    }
+    // Timer continues running throughout the test
   }
 
   updateQuestionGif(state) {
@@ -587,6 +654,59 @@ class TestLab {
     document.getElementById("show-explanation").style.display = "none";
   }
 
+  startContinuousTimer() {
+    this.continuousTimer = setInterval(() => {
+      this.updateContinuousTimerDisplay();
+    }, 1000);
+  }
+
+  stopContinuousTimer() {
+    if (this.continuousTimer) {
+      clearInterval(this.continuousTimer);
+      this.continuousTimer = null;
+    }
+  }
+
+  updateContinuousTimerDisplay() {
+    const currentTime = Date.now();
+    const elapsedTime = Math.floor((currentTime - this.testStartTime) / 1000);
+
+    const minutes = Math.floor(elapsedTime / 60);
+    const seconds = elapsedTime % 60;
+    const display = `${minutes.toString().padStart(2, "0")}:${seconds
+      .toString()
+      .padStart(2, "0")}`;
+
+    document.getElementById("timer-display").textContent = display;
+
+    // Set color based on test type and elapsed time
+    const timerElement = document.getElementById("test-timer");
+
+    if (this.currentTestType === "timed") {
+      // For timed tests, show warning colors as time progresses
+      const totalTimeLimit =
+        this.timePerQuestion * this.currentQuestions.length; // Total time for all questions
+      const timeRemaining = totalTimeLimit - elapsedTime;
+
+      if (timeRemaining <= 60) {
+        // Less than 1 minute remaining
+        timerElement.style.color = "var(--error-color)";
+      } else if (timeRemaining <= 180) {
+        // Less than 3 minutes remaining
+        timerElement.style.color = "var(--warning-color)";
+      } else {
+        timerElement.style.color = "var(--primary-dark)";
+      }
+
+      // Auto-complete test if time runs out
+      if (timeRemaining <= 0) {
+        this.showResults();
+      }
+    } else {
+      timerElement.style.color = "var(--primary-dark)";
+    }
+  }
+
   startQuestionTimer() {
     this.timeLeft = this.timePerQuestion;
     this.updateTimerDisplay();
@@ -595,8 +715,12 @@ class TestLab {
       this.timeLeft--;
       this.updateTimerDisplay();
 
-      if (this.timeLeft <= 0) {
+      // Only timeout for timed tests, other tests continue counting up after 0
+      if (this.timeLeft <= 0 && this.currentTestType === "timed") {
         this.timeOut();
+      } else if (this.timeLeft <= 0) {
+        // For non-timed tests, continue counting in negative (showing elapsed time)
+        this.timeLeft--;
       }
     }, 1000);
   }
@@ -609,19 +733,35 @@ class TestLab {
   }
 
   updateTimerDisplay() {
-    const minutes = Math.floor(this.timeLeft / 60);
-    const seconds = this.timeLeft % 60;
-    const display = `${minutes.toString().padStart(2, "0")}:${seconds
-      .toString()
-      .padStart(2, "0")}`;
-    document.getElementById("timer-display").textContent = display;
-
-    // Change color when time is running out
     const timerElement = document.getElementById("test-timer");
-    if (this.timeLeft <= 10) {
-      timerElement.style.color = "var(--error-color)";
-    } else if (this.timeLeft <= 20) {
-      timerElement.style.color = "var(--warning-color)";
+
+    if (this.currentTestType === "timed") {
+      // For timed tests, show countdown
+      const minutes = Math.floor(Math.abs(this.timeLeft) / 60);
+      const seconds = Math.abs(this.timeLeft) % 60;
+      const display = `${minutes.toString().padStart(2, "0")}:${seconds
+        .toString()
+        .padStart(2, "0")}`;
+      document.getElementById("timer-display").textContent = display;
+
+      // Change color when time is running out
+      if (this.timeLeft <= 10) {
+        timerElement.style.color = "var(--error-color)";
+      } else if (this.timeLeft <= 20) {
+        timerElement.style.color = "var(--warning-color)";
+      } else {
+        timerElement.style.color = "var(--warning-color)";
+      }
+    } else {
+      // For other tests, show elapsed time (count up from 0)
+      const elapsedTime = this.timePerQuestion - this.timeLeft;
+      const minutes = Math.floor(elapsedTime / 60);
+      const seconds = elapsedTime % 60;
+      const display = `${minutes.toString().padStart(2, "0")}:${seconds
+        .toString()
+        .padStart(2, "0")}`;
+      document.getElementById("timer-display").textContent = display;
+      timerElement.style.color = "var(--primary-dark)";
     }
   }
 
@@ -634,7 +774,6 @@ class TestLab {
     }
 
     this.showAnswerFeedback();
-    document.getElementById("next-question").disabled = false;
     document.getElementById("show-explanation").style.display = "inline-block";
   }
 
@@ -646,7 +785,146 @@ class TestLab {
       option.style.pointerEvents = "auto";
     });
 
+    this.updateNavigationButtons();
     this.displayQuestion();
+  }
+
+  prevQuestion() {
+    if (this.currentQuestionIndex > 0) {
+      this.currentQuestionIndex--;
+
+      // Re-enable answer options
+      document.querySelectorAll(".answer-option").forEach((option) => {
+        option.style.pointerEvents = "auto";
+      });
+
+      this.updateNavigationButtons();
+      this.displayQuestion();
+    }
+  }
+
+  createQuestionStatusGrid() {
+    const grid = document.getElementById("question-status-grid");
+    grid.innerHTML = "";
+
+    // Solo crear 3 botones: anterior, actual, siguiente
+    for (let i = 0; i < 3; i++) {
+      const btn = document.createElement("button");
+      btn.className = "question-status-btn";
+      btn.addEventListener("click", (e) => {
+        const questionIndex = parseInt(e.target.dataset.questionIndex);
+        if (
+          questionIndex >= 0 &&
+          questionIndex < this.currentQuestions.length
+        ) {
+          this.goToQuestion(questionIndex);
+        }
+      });
+      grid.appendChild(btn);
+    }
+
+    this.updateQuestionStatusGrid();
+  }
+
+  updateQuestionStatusGrid() {
+    const buttons = document.querySelectorAll(".question-status-btn");
+    const current = this.currentQuestionIndex;
+    const total = this.currentQuestions.length;
+
+    // Determinar los índices a mostrar: anterior, actual, siguiente
+    const indices = [
+      current > 0 ? current - 1 : null,
+      current,
+      current < total - 1 ? current + 1 : null,
+    ];
+
+    buttons.forEach((btn, position) => {
+      const questionIndex = indices[position];
+
+      // Limpiar todas las clases
+      btn.classList.remove(
+        "current",
+        "answered-correct",
+        "answered-incorrect",
+        "visited"
+      );
+
+      if (questionIndex === null) {
+        // No hay pregunta para esta posición
+        btn.style.opacity = "0.3";
+        btn.textContent = "—";
+        btn.disabled = true;
+        btn.dataset.questionIndex = "-1";
+      } else {
+        btn.style.opacity = "1";
+        btn.textContent = questionIndex + 1;
+        btn.disabled = false;
+        btn.dataset.questionIndex = questionIndex;
+        btn.title = `Pregunta ${questionIndex + 1}`;
+
+        // Aplicar el estado apropiado
+        if (questionIndex === current) {
+          btn.classList.add("current");
+        } else if (this.userAnswers[questionIndex] !== undefined) {
+          // Verificar si la respuesta fue correcta
+          const question = this.currentQuestions[questionIndex];
+          const userAnswer = this.userAnswers[questionIndex];
+          const isCorrect = userAnswer === question.shuffledCorrectAnswer;
+
+          if (isCorrect) {
+            btn.classList.add("answered-correct");
+          } else {
+            btn.classList.add("answered-incorrect");
+          }
+        } else if (this.visitedQuestions.has(questionIndex)) {
+          btn.classList.add("visited");
+        }
+      }
+    });
+  }
+
+  goToQuestion(index) {
+    if (index >= 0 && index < this.currentQuestions.length) {
+      // Mark current question as visited before moving
+      this.visitedQuestions.add(this.currentQuestionIndex);
+
+      this.currentQuestionIndex = index;
+      this.displayQuestion();
+    }
+  }
+
+  updateNavigationButtons() {
+    const prevBtn = document.getElementById("prev-question");
+    const nextHeaderBtn = document.getElementById("next-question-header");
+
+    // Update previous button
+    prevBtn.disabled = this.currentQuestionIndex === 0;
+
+    // Update next header button
+    const hasAnswered =
+      this.userAnswers[this.currentQuestionIndex] !== undefined;
+    const isLastQuestion =
+      this.currentQuestionIndex >= this.currentQuestions.length - 1;
+
+    if (isLastQuestion && hasAnswered) {
+      nextHeaderBtn.disabled = false;
+      nextHeaderBtn.textContent = "Ver Resultados";
+    } else {
+      nextHeaderBtn.disabled = !hasAnswered;
+      nextHeaderBtn.innerHTML = `
+        Siguiente
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      `;
+    }
   }
 
   finishTest() {
@@ -656,6 +934,9 @@ class TestLab {
   }
 
   showResults() {
+    // Stop the continuous timer
+    this.stopContinuousTimer();
+
     const totalQuestions = this.currentQuestions.length;
     const correctAnswers = this.userAnswers.reduce((count, answer, index) => {
       const question = this.currentQuestions[index];

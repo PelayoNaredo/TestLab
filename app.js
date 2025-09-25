@@ -218,8 +218,8 @@ class TestLab {
             inAnimation = 'animate__fadeIn';
             outAnimation = 'animate__fadeOut';
         } else {
-            inAnimation = direction === 'forward' ? 'animate__slideInRight' : 'animate__slideInLeft';
-            outAnimation = direction === 'forward' ? 'animate__slideOutLeft' : 'animate__slideOutRight';
+            inAnimation = direction === 'forward' ? 'animate__slideInRightFade' : 'animate__slideInLeftFade';
+            outAnimation = direction === 'forward' ? 'animate__slideOutLeftFade' : 'animate__slideOutRightFade';
         }
 
         if (currentScreen) {

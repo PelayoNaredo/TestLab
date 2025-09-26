@@ -300,6 +300,9 @@ class TestLab {
     subjectsGrid.innerHTML = "";
 
     this.subjects.forEach((subject) => {
+      console.log(
+        `📝 Mostrando subject: ${subject.name}, icon: ${subject.icon}`
+      );
       const subjectCard = Utils.createElement("div", "subject-card");
 
       subjectCard.innerHTML = `

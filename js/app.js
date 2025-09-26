@@ -87,6 +87,7 @@ class TestLab {
         this.loadMockData();
       } else {
         this.displaySubjects();
+        this.hideLoadingScreen();
       }
     } catch (error) {
       console.error("Error general cargando subjects:", error);
@@ -293,6 +294,17 @@ class TestLab {
       `✅ ${this.subjects.length} materias mock cargadas correctamente`
     );
     this.displaySubjects();
+
+    // Ocultar loading screen y mostrar pantalla principal
+    this.hideLoadingScreen();
+  }
+
+  hideLoadingScreen() {
+    const loadingScreen = document.getElementById("loading-screen");
+    if (loadingScreen) {
+      loadingScreen.classList.remove("active");
+      console.log("🎀 Loading screen ocultado");
+    }
   }
 
   displaySubjects() {

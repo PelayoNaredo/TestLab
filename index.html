@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>TestLab - Aplicación de Tests</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -124,6 +127,202 @@
         </div>
       </div>
 
+      <!-- Test Configuration Screen -->
+      <div id="test-config-screen" class="screen">
+        <div class="container">
+          <header class="header">
+            <button class="back-button" id="back-to-test-types-config">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+              Volver
+            </button>
+            <h1 id="config-test-title">Configurar Test</h1>
+            <p id="config-test-subtitle">Ajusta los parámetros del test</p>
+          </header>
+
+          <div class="config-content">
+            <div class="config-card">
+              <!-- Configuración para test secuencial -->
+              <div
+                id="sequential-config"
+                class="config-section"
+                style="display: none"
+              >
+                <h3>Selecciona el rango de preguntas</h3>
+                <div class="range-selector">
+                  <div class="range-option">
+                    <label>Desde pregunta:</label>
+                    <input
+                      type="number"
+                      id="range-start"
+                      min="1"
+                      value="1"
+                      class="range-input"
+                    />
+                  </div>
+                  <div class="range-option">
+                    <label>Hasta pregunta:</label>
+                    <input
+                      type="number"
+                      id="range-end"
+                      min="1"
+                      value="10"
+                      class="range-input"
+                    />
+                  </div>
+                </div>
+                <div class="range-info">
+                  <p>
+                    Total de preguntas seleccionadas:
+                    <span id="selected-count">10</span>
+                  </p>
+                  <p class="range-note">
+                    Máximo disponible:
+                    <span id="max-questions">20</span> preguntas
+                  </p>
+                </div>
+              </div>
+
+              <!-- Configuración para test aleatorio -->
+              <div
+                id="random-config"
+                class="config-section"
+                style="display: none"
+              >
+                <h3>Selecciona la cantidad de preguntas</h3>
+                <div class="quantity-selector">
+                  <div class="quantity-buttons">
+                    <button class="quantity-btn" data-quantity="5">
+                      5 preguntas
+                    </button>
+                    <button class="quantity-btn" data-quantity="10">
+                      10 preguntas
+                    </button>
+                    <button class="quantity-btn active" data-quantity="15">
+                      15 preguntas
+                    </button>
+                    <button class="quantity-btn" data-quantity="30">
+                      30 preguntas
+                    </button>
+                    <button class="quantity-btn" data-quantity="all">
+                      Todas
+                    </button>
+                  </div>
+                  <div class="custom-quantity">
+                    <label>O elige una cantidad personalizada:</label>
+                    <input
+                      type="number"
+                      id="custom-quantity"
+                      min="1"
+                      placeholder="Ej: 8"
+                      class="range-input"
+                    />
+                  </div>
+                </div>
+                <div class="quantity-info">
+                  <p>
+                    Preguntas seleccionadas:
+                    <span id="random-selected-count">15</span>
+                  </p>
+                  <p class="range-note">
+                    Disponibles:
+                    <span id="random-max-questions">20</span> preguntas
+                  </p>
+                </div>
+              </div>
+
+              <!-- Configuración para test de errores -->
+              <div
+                id="errors-config"
+                class="config-section"
+                style="display: none"
+              >
+                <div class="errors-info">
+                  <h3>Test de Errores</h3>
+                  <p>
+                    Este test incluirá solo las preguntas que has respondido
+                    incorrectamente en sesiones anteriores.
+                  </p>
+                  <div class="errors-stats">
+                    <div class="stat">
+                      <strong id="error-questions-count">0</strong>
+                      <span>Preguntas con errores</span>
+                    </div>
+                  </div>
+                  <div class="errors-note">
+                    <p class="range-note">
+                      💡 Si es tu primera vez, se incluirán todas las preguntas
+                      para crear tu base de errores.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Configuración para test cronometrado -->
+              <div
+                id="timed-config"
+                class="config-section"
+                style="display: none"
+              >
+                <h3>Configurar test cronometrado</h3>
+                <div class="timed-options">
+                  <div class="timed-group">
+                    <label>Cantidad de preguntas:</label>
+                    <select id="timed-questions" class="timed-select">
+                      <option value="5">5 preguntas</option>
+                      <option value="10" selected>10 preguntas</option>
+                      <option value="15">15 preguntas</option>
+                      <option value="20">20 preguntas</option>
+                    </select>
+                  </div>
+                  <div class="timed-group">
+                    <label>Tiempo por pregunta:</label>
+                    <select id="time-per-question" class="timed-select">
+                      <option value="15">15 segundos</option>
+                      <option value="30" selected>30 segundos</option>
+                      <option value="45">45 segundos</option>
+                      <option value="60">1 minuto</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="timed-info">
+                  <p>
+                    Tiempo total estimado: <span id="total-time">5:00</span>
+                  </p>
+                  <p class="range-note">
+                    ⏰ Una vez que empieces, no podrás pausar el test
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="config-actions">
+              <button id="start-configured-test" class="primary-button">
+                Comenzar Test
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Test Taking Screen -->
       <div id="test-screen" class="screen">
         <div class="container">
@@ -188,7 +387,6 @@
                 >
                   <path d="m15 18-6-6 6-6" />
                 </svg>
-                Anterior
               </button>
               <div class="question-status-grid" id="question-status-grid">
                 <!-- Los 3 botones de estado de preguntas se generarán dinámicamente -->
@@ -199,7 +397,6 @@
                 disabled
                 title="Siguiente pregunta"
               >
-                Siguiente
                 <svg
                   width="16"
                   height="16"
@@ -296,6 +493,66 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- JavaScript Modules -->
+    <script src="js/utils.js"></script>
+    <script src="js/screen-manager.js"></script>
+    <script src="js/timer-manager.js"></script>
+    <script src="js/question-manager.js"></script>
+    <script src="js/navigation-manager.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Script para prevenir zoom -->
+    <script>
+      // Prevenir zoom con doble tap
+      let lastTouchEnd = 0;
+      document.addEventListener(
+        "touchend",
+        function (event) {
+          const now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+          }
+          lastTouchEnd = now;
+        },
+        false
+      );
+
+      // Prevenir zoom con gestos de pellizco
+      document.addEventListener("gesturestart", function (event) {
+        event.preventDefault();
+      });
+
+      document.addEventListener("gesturechange", function (event) {
+        event.preventDefault();
+      });
+
+      document.addEventListener("gestureend", function (event) {
+        event.preventDefault();
+      });
+
+      // Prevenir zoom con rueda del ratón + Ctrl
+      document.addEventListener(
+        "wheel",
+        function (event) {
+          if (event.ctrlKey) {
+            event.preventDefault();
+          }
+        },
+        { passive: false }
+      );
+
+      // Prevenir zoom con teclado (Ctrl + / Ctrl -)
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.ctrlKey &&
+          (event.keyCode === 107 ||
+            event.keyCode === 109 ||
+            event.keyCode === 187 ||
+            event.keyCode === 189)
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>

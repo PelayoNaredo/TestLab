@@ -53,6 +53,13 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  /* Bloquear zoom */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #app {
@@ -61,6 +68,9 @@ body {
   min-height: 100vh;
   overflow-y: auto !important;
   overflow-x: hidden;
+  /* Prevenir zoom en el contenedor principal */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 /* Particles Background */
@@ -599,7 +609,7 @@ body {
   display: none; /* Initially hidden, shown when test starts */
   align-items: center;
   gap: 0.5rem;
-  color: var(--warning-color);
+  color: var(--secondary-color);
   font-weight: 400;
   font-size: 1.2rem;
 }
@@ -1383,5 +1393,291 @@ body {
   .nav-button svg {
     width: 14px;
     height: 14px;
+  }
+}
+
+/* Test Configuration Screen */
+.config-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.config-card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  box-shadow: 8px 8px 0px var(--border-color);
+  border: 3px solid var(--border-color);
+}
+
+.config-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.config-icon {
+  margin-bottom: 1rem;
+}
+
+.config-header h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.config-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.config-section {
+  margin-top: 1.5rem;
+}
+
+.config-section.hidden {
+  display: none;
+}
+
+.config-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Sequential Config */
+.range-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.range-option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.range-option label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.range-input {
+  padding: 1rem;
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-secondary);
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.range-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.range-info,
+.quantity-info,
+.timed-info {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--border-color);
+}
+
+.range-info p,
+.quantity-info p,
+.timed-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.range-note {
+  color: var(--text-secondary);
+  font-size: 0.95rem !important;
+}
+
+/* Random Config */
+.quantity-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quantity-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.quantity-btn {
+  padding: 1rem;
+  border: 3px solid var(--border-color);
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.quantity-btn:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 175, 204, 0.3);
+}
+
+.quantity-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.custom-quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.custom-quantity label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Errors Config */
+.errors-info {
+  text-align: center;
+}
+
+.errors-stats {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.stat {
+  background: var(--bg-secondary);
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat strong {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.errors-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--accent-color);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--warning-color);
+}
+
+/* Timed Config */
+.timed-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.timed-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timed-group label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.timed-select {
+  padding: 1rem;
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-secondary);
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timed-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+/* Config Actions */
+.config-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.config-actions .primary-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.3rem;
+}
+
+/* Mobile Responsive for Config Screen */
+@media (max-width: 768px) {
+  .config-card {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .range-selector,
+  .timed-options {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .quantity-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .config-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .config-section h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quantity-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .config-actions .primary-button {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
   }
 }

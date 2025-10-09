@@ -38,6 +38,8 @@ class TestLab {
         "BMC_U2_examen.json",
         "FG_UD1.json",
         "FG_UD1_examen.json",
+        "GMB_U1.json",
+        "GMB_U1_examen.json",
       ];
 
       let loadedCount = 0;

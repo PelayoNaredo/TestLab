@@ -1,0 +1,544 @@
+{
+  "name": "Examen Sistemas Sanitarios - Gestión de Muestras Biológicas",
+  "icon": "🏥",
+  "description": "Test avanzado sobre Sistemas Sanitarios y el SNS español - 50 preguntas complejas del Tema 1",
+  "questions": [
+    {
+      "question": "Según la definición de Wyllie y col. (1970), ¿cómo se conceptualiza la salud y la enfermedad?",
+      "options": [
+        "La salud es ausencia de enfermedad; la enfermedad es presencia de síntomas",
+        "La salud es el continuo y perfecto ajuste del ser humano a su medio ambiente; la enfermedad es el continuo y perfecto desajuste",
+        "La salud es bienestar físico completo; la enfermedad es malestar temporal",
+        "La salud es equilibrio homeostático; la enfermedad es desequilibrio metabólico"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Wyllie y col. (1970) definieron la salud como el continuo y perfecto ajuste del ser humano a su medio ambiente, y la enfermedad como el continuo y perfecto desajuste, señalando la importancia del equilibrio entre el individuo y su entorno."
+    },
+    {
+      "question": "¿En qué año fue publicada la carta fundacional de la OMS que define la salud como 'un estado de completo bienestar físico, mental y social'?",
+      "options": ["1942", "1948", "1970", "1986"],
+      "correctAnswer": 1,
+      "explanation": "En 1948, la carta fundacional de la Organización Mundial de la Salud (OMS) define salud como 'un estado de completo bienestar físico, mental y social, y no solo la ausencia de enfermedades'."
+    },
+    {
+      "question": "Entre los determinantes de salud, ¿cuál NO es considerado uno de los cuatro determinantes básicos?",
+      "options": [
+        "Biología humana",
+        "Sistema sanitario",
+        "Educación formal",
+        "Estilo de vida"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los cuatro determinantes básicos de la salud son: biología humana, medio ambiente, sistema sanitario y estilo de vida. La educación formal, aunque importante, no está listada como determinante básico independiente."
+    },
+    {
+      "question": "Verdadero o Falso: El modelo de sistema sanitario liberal considera la salud como un bien de consumo donde el usuario paga directamente por los servicios.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Es verdadero. En el modelo liberal (como el de EEUU), la salud se considera un bien de consumo y cada persona paga directamente al proveedor del servicio, con el Estado ofreciendo solo prestaciones muy limitadas para personas sin recursos."
+    },
+    {
+      "question": "¿Qué modelo de sistema sanitario fue implementado por primera vez en Alemania en 1883?",
+      "options": [
+        "Modelo Beveridge",
+        "Modelo Bismarck o Mutualista",
+        "Modelo Liberal",
+        "Modelo Socialista"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El modelo Mutualista o de Bismarck fue el primero que se puso en funcionamiento en la actual Alemania en 1883, basado en un seguro obligatorio para trabajadores."
+    },
+    {
+      "question": "En el modelo socialista de sistema sanitario, ¿cuál es su característica principal?",
+      "options": [
+        "Coexistencia de sector público y privado con financiación mixta",
+        "Todo el sistema es de titularidad pública con servicios gratuitos y universales",
+        "Sistema totalmente privatizado con seguros obligatorios",
+        "Acceso mediante seguros privados financiados por empresas"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En el modelo socialista (Corea del Norte, Cuba), todo el sistema de salud es de titularidad pública y todo lo incluido en la cartera de servicios se presta en condiciones de equidad, gratuidad y universalidad."
+    },
+    {
+      "question": "¿Cuáles de los siguientes países utilizan el modelo de Seguro Obligatorio (Bismarck)?",
+      "options": [
+        "España, Italia, Portugal",
+        "Francia, Alemania, Bélgica",
+        "Reino Unido, Suecia, Dinamarca",
+        "Estados Unidos, Canadá, México"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Francia, Alemania, Austria, Bélgica, Luxemburgo y Países Bajos tienen modelos derivados del sistema de Seguro Obligatorio o Bismarck, donde las personas trabajadoras pagan cuotas obligatorias."
+    },
+    {
+      "question": "Verdadero o Falso: El modelo Beveridge se financia exclusivamente con las cuotas de los trabajadores asegurados.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 1,
+      "explanation": "Falso. El modelo Beveridge o de Sanidad Pública se financia con los impuestos de toda la población, no solo con cuotas de trabajadores."
+    },
+    {
+      "question": "¿En qué año se presentó el informe de W. Beveridge en el Parlamento Británico que dio origen al modelo de Sanidad Pública?",
+      "options": ["1883", "1942", "1948", "1986"],
+      "correctAnswer": 1,
+      "explanation": "El modelo Beveridge se basa en el informe presentado por W. Beveridge en el Parlamento Británico en 1942, que estableció las bases de la sanidad pública financiada por impuestos."
+    },
+    {
+      "question": "Según los objetivos de la Unión Europea para 2014-2020, ¿cuál de estas NO es una prioridad mencionada?",
+      "options": [
+        "Emprender reformas para sistemas de salud innovadores y viables",
+        "Proteger a los ciudadanos frente a amenazas sanitarias transfronterizas",
+        "Establecer un sistema único de salud europeo unificado",
+        "Fomentar la salud de los ciudadanos europeos y prevenir enfermedades"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La UE no busca establecer un sistema único unificado, sino marcar objetivos que los estados miembros deben cumplir: reformas para sistemas innovadores, mejor acceso, fomento de la salud y protección ante amenazas transfronterizas."
+    },
+    {
+      "question": "¿Cuál de los siguientes NO es un indicador de salud en el Sistema Europeo de indicadores (European Core Health Indicators)?",
+      "options": [
+        "Demografía y situación económica",
+        "Determinantes de la salud",
+        "Nivel educativo universitario",
+        "Intervenciones de la salud"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El Sistema Europeo de indicadores de salud incluye 88 indicadores agrupados en: demografía y situación económica, estado de salud, determinantes de la salud, e intervenciones de la salud. El nivel educativo universitario no es una categoría específica."
+    },
+    {
+      "question": "¿Cuál fue la ley que creó el Sistema Nacional de Salud (SNS) en España?",
+      "options": [
+        "Real Decreto-ley 16/2012",
+        "Ley 44/2003 de ordenación de las profesiones sanitarias",
+        "Ley General de Sanidad 14/1986, de 25 de abril",
+        "Constitución Española de 1978"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El Sistema Nacional de Salud fue creado en 1986 mediante la Ley General de Sanidad, 14/1986, de 25 de abril, que propuso un sistema sanitario nuevo y reorganizó la estructura existente."
+    },
+    {
+      "question": "Verdadero o Falso: La puesta en marcha completa del SNS se prolongó hasta 2001 con la finalización de las transferencias a las comunidades autónomas.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. Aunque la Ley General de Sanidad fue aprobada en 1986, su puesta en marcha se prolongó hasta 2001, cuando se finalizaron las transferencias en materia de sanidad a las comunidades autónomas."
+    },
+    {
+      "question": "¿Cuál de estas características NO fue introducida por la Ley General de Sanidad de 1986?",
+      "options": [
+        "Asistencia universal",
+        "Organización descentralizada",
+        "Copago farmacéutico obligatorio para todos",
+        "Asistencia integral"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La Ley General de Sanidad introdujo asistencia universal, integral, prestaciones básicas en el extranjero y organización descentralizada. El copago farmacéutico no fue establecido inicialmente como obligatorio para todos."
+    },
+    {
+      "question": "¿Qué organismo sustituyó al INSALUD tras completarse la transferencia de competencias en 2002?",
+      "options": [
+        "Ministerio de Sanidad",
+        "INGESA (Instituto Nacional de Gestión Sanitaria)",
+        "Consejo Interterritorial del SNS",
+        "MUFACE"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El INSALUD fue reorganizado en 2002 y pasó a denominarse Instituto Nacional de Gestión Sanitaria (INGESA), al que se le asignaron funciones de gestión de la Seguridad Social."
+    },
+    {
+      "question": "En el modelo descentralizado del SNS español, ¿cuál es la función principal del Estado?",
+      "options": [
+        "Gestionar directamente todos los hospitales del país",
+        "Fijar las bases del funcionamiento, establecer prestaciones mínimas y ejercer coordinación",
+        "Decidir qué comunidades autónomas reciben más financiación",
+        "Contratar al personal sanitario de todas las regiones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En el modelo descentralizado, el Estado fija las bases del funcionamiento, establece las prestaciones mínimas para toda la población y ejerce la coordinación de todo el sistema, mientras las comunidades autónomas gestionan los servicios."
+    },
+    {
+      "question": "¿Cuántas áreas de salud tiene la Comunidad Autónoma de Andalucía?",
+      "options": ["8", "11", "14", "24"],
+      "correctAnswer": 2,
+      "explanation": "Andalucía tiene 14 áreas de gestión sanitaria, siendo una de las comunidades con más unidades territoriales."
+    },
+    {
+      "question": "Verdadero o Falso: La Comunidad de Madrid tiene solo 1 área de salud.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. Según la tabla del documento, la Comunidad de Madrid tiene 1 área de salud."
+    },
+    {
+      "question": "¿Entre cuántos habitantes debe atender una zona básica de salud?",
+      "options": [
+        "1.000 y 5.000",
+        "5.000 y 25.000",
+        "25.000 y 50.000",
+        "50.000 y 100.000"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las zonas básicas de salud constituyen el marco territorial elemental para cubrir las necesidades elementales de la población, atendiendo entre 5.000 y 25.000 habitantes."
+    },
+    {
+      "question": "¿Cuál es la función del Consejo Interterritorial del Sistema Nacional de Salud?",
+      "options": [
+        "Gestionar los hospitales de referencia nacional",
+        "Coordinar, cooperar y comunicar entre los servicios de salud autonómicos y la Administración estatal",
+        "Establecer los precios de los medicamentos",
+        "Formar al personal sanitario"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El Consejo Interterritorial es el órgano permanente de coordinación, cooperación, comunicación e información de los Servicios de Salud autonómicos, tanto entre ellos como con la Administración estatal."
+    },
+    {
+      "question": "¿Quién preside el Consejo Interterritorial del SNS?",
+      "options": [
+        "El Rey de España",
+        "El Presidente del Gobierno",
+        "El Ministro o Ministra de Sanidad",
+        "Un representante elegido por las comunidades autónomas"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El Consejo Interterritorial está presidido por el Ministro o la Ministra de Sanidad, e integrado por un representante de cada comunidad autónoma y representantes de la Administración del Estado."
+    },
+    {
+      "question": "¿Cuál es la característica principal que diferencia la asistencia primaria de la especializada?",
+      "options": [
+        "La primaria es de pago, la especializada es gratuita",
+        "La primaria se caracteriza por accesibilidad, la especializada por complejidad técnica",
+        "La primaria solo atiende urgencias, la especializada solo cirugías",
+        "La primaria es privada, la especializada es pública"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La asistencia primaria se caracteriza por su accesibilidad y capacidad de resolución de problemas frecuentes, mientras que la especializada se caracteriza por contar con medios diagnósticos y terapéuticos de mayor complejidad técnica y coste."
+    },
+    {
+      "question": "Verdadero o Falso: El acceso a la asistencia especializada es siempre espontáneo, sin necesidad de derivación.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 1,
+      "explanation": "Falso. El acceso a la asistencia especializada se realiza por indicación desde el servicio de atención primaria, salvo en casos de emergencia. El acceso espontáneo es característico de la atención primaria."
+    },
+    {
+      "question": "¿Cuál de estas prestaciones NO corresponde a la asistencia primaria?",
+      "options": [
+        "Medicina general",
+        "Laboratorio básico",
+        "Cirugía cardíaca compleja",
+        "Educación para la salud"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La cirugía cardíaca compleja requiere medios de alta complejidad y corresponde a la asistencia especializada. La atención primaria incluye medicina general, atención materno-infantil, urgencias, laboratorio básico y educación para la salud."
+    },
+    {
+      "question": "¿Cuáles son las tres funciones básicas de los hospitales según el documento?",
+      "options": [
+        "Asistencia, investigación y facturación",
+        "Docencia, asistencia e investigación",
+        "Prevención, curación y rehabilitación",
+        "Diagnóstico, tratamiento y seguimiento"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las funciones básicas de los hospitales son la docencia, la asistencia y la investigación."
+    },
+    {
+      "question": "¿Qué es la cartera común de servicios del SNS?",
+      "options": [
+        "El presupuesto anual destinado a sanidad",
+        "La lista de hospitales públicos disponibles",
+        "La lista mínima de prestaciones que todos los servicios de salud ofrecerán a la población",
+        "El conjunto de profesionales sanitarios colegiados"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La cartera común de servicios es la lista mínima de prestaciones que todos los servicios de salud ofrecerán a la población, determinando el tipo de financiación pública correspondiente a cada grupo."
+    },
+    {
+      "question": "¿En cuál de las tres modalidades de la cartera común se incluye el transporte sanitario urgente?",
+      "options": [
+        "Cartera común de servicios asistenciales",
+        "Cartera común suplementaria",
+        "Cartera común de servicios accesorios",
+        "No está incluido en ninguna cartera"
+      ],
+      "correctAnswer": 0,
+      "explanation": "El transporte sanitario urgente se incluye en la cartera común de servicios asistenciales, prestándose para pacientes que lo requieran por causas exclusivamente clínicas y que no puedan usar medios ordinarios."
+    },
+    {
+      "question": "Verdadero o Falso: La prestación farmacéutica está incluida en la cartera común suplementaria y está sujeta a aportación por parte del usuario.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. La prestación farmacéutica está incluida en la cartera común suplementaria, que comprende prestaciones realizadas bajo prescripción y sujetas a aportación por parte de la persona usuaria."
+    },
+    {
+      "question": "¿Qué documento permite el acceso de la población a las prestaciones del SNS?",
+      "options": [
+        "El DNI o NIE",
+        "La tarjeta sanitaria individual (TSI)",
+        "El certificado de empadronamiento",
+        "La cartilla de la Seguridad Social"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La tarjeta sanitaria individual (TSI) es el documento personal e intransferible que permite el acceso a los centros, servicios y prestaciones del SNS."
+    },
+    {
+      "question": "¿Cuál de estos colectivos NO tiene consideración de asegurado según la legislación actual?",
+      "options": [
+        "Trabajadores afiliados a la Seguridad Social",
+        "Pensionistas de la Seguridad Social",
+        "Desempleados sin subsidio inscritos en el INEM",
+        "Turistas extranjeros de países no comunitarios"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Tienen consideración de aseguradas: trabajadores afiliados a la Seguridad Social, perceptores de prestaciones (pensionistas o desempleados), y desempleados sin subsidio inscritos en el INEM. Los turistas extranjeros de países no comunitarios no tienen esta consideración automáticamente."
+    },
+    {
+      "question": "¿Qué porcentaje del PIB supera el gasto público anual en sanidad en España?",
+      "options": ["2%", "4%", "6%", "10%"],
+      "correctAnswer": 2,
+      "explanation": "El gasto público anual en sanidad en España supera el 6% del PIB, lo que representa un coste muy elevado para el sistema."
+    },
+    {
+      "question": "¿Qué Real Decreto-ley se aprobó para garantizar la sostenibilidad del SNS?",
+      "options": [
+        "RD-ley 14/1986",
+        "RD-ley 16/2012",
+        "RD-ley 44/2003",
+        "RD-ley 1/2001"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El RD-ley 16/2012 de medidas urgentes para garantizar la sostenibilidad del SNS y mejorar la calidad y seguridad de sus prestaciones fue aprobado y publicado en el BOE."
+    },
+    {
+      "question": "¿Cuál de estas entidades NO es una mutualidad de funcionarios mencionada en el documento?",
+      "options": ["MUFACE", "ISFAS", "MUGEJU", "INGESA"],
+      "correctAnswer": 3,
+      "explanation": "MUFACE, ISFAS y MUGEJU son mutualidades de funcionarios. INGESA es el Instituto Nacional de Gestión Sanitaria, no una mutualidad."
+    },
+    {
+      "question": "¿Qué porcentaje aproximado del gasto sanitario total representa la sanidad privada en España?",
+      "options": ["10%", "26%", "50%", "75%"],
+      "correctAnswer": 1,
+      "explanation": "El peso del gasto de la sanidad privada supone más del 26% del gasto sanitario total en España, y sigue aumentando."
+    },
+    {
+      "question": "Verdadero o Falso: Los 'conciertos' son acuerdos que las administraciones públicas pueden firmar con empresas privadas para facilitar ciertos servicios sanitarios.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. Los conciertos son acuerdos que las administraciones pueden firmar con empresas privadas para facilitar ciertos servicios, permitiendo a la población acceder a servicios privados a través del SNS."
+    },
+    {
+      "question": "Según la Ley 44/2003, ¿qué son las profesiones sanitarias?",
+      "options": [
+        "Todas las profesiones que trabajan en hospitales",
+        "Profesiones tituladas y reguladas cuya formación se dirige específicamente a la atención de la salud y están organizadas en colegios profesionales",
+        "Solo médicos y enfermeros",
+        "Cualquier profesional con conocimientos de primeros auxilios"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Las profesiones sanitarias son aquellas tituladas y reguladas cuya formación se dirige específicamente a dotar de conocimientos, habilidades y actitudes propias de la atención de la salud, y están organizadas en colegios profesionales oficialmente reconocidos."
+    },
+    {
+      "question": "¿Cuál de estos NO es uno de los cuatro principios fundamentales de la ética médica mencionados?",
+      "options": [
+        "Principio de beneficencia",
+        "Principio de autonomía",
+        "Principio de rentabilidad",
+        "Principio de justicia"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Los cuatro principios fundamentales de la ética médica son: beneficencia, no maleficencia, autonomía y justicia. El principio de rentabilidad no forma parte de estos principios éticos."
+    },
+    {
+      "question": "¿Qué implica el principio de autonomía en la ética sanitaria?",
+      "options": [
+        "Que los médicos pueden tomar decisiones sin consultar al paciente",
+        "Que el paciente tiene derecho a aceptar o rechazar cualquier tratamiento",
+        "Que solo los familiares pueden decidir sobre el tratamiento",
+        "Que el sistema sanitario decide qué es mejor para cada persona"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El principio de autonomía hace referencia a la capacidad de la persona usuaria para tomar decisiones fundamentales, lo que implica que cualquier paciente tiene derecho a aceptar o rechazar cualquier tratamiento."
+    },
+    {
+      "question": "¿Qué derecho del paciente implica que solo personal autorizado puede acceder a su información clínica?",
+      "options": [
+        "Derecho a la información",
+        "Derecho a la intimidad",
+        "Derecho a la confidencialidad",
+        "Derecho a la dignidad"
+      ],
+      "correctAnswer": 2,
+      "explanation": "El derecho a la confidencialidad establece que la información clínica de cada paciente es confidencial, y solo accederá a ella personal autorizado por causas justificadas, con obligación de preservarla y no difundirla."
+    },
+    {
+      "question": "¿Cómo se define la economía sanitaria?",
+      "options": [
+        "El presupuesto total destinado a salud pública",
+        "La especialidad de la economía que estudia la eficiencia de la organización de los servicios de salud para mejorarla",
+        "El coste de los medicamentos y tratamientos",
+        "La gestión de los recursos humanos en hospitales"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La economía sanitaria es la especialidad de la economía que estudia la eficiencia de la organización de los servicios de salud para mejorarla."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre eficacia y eficiencia?",
+      "options": [
+        "Eficacia es rapidez, eficiencia es calidad",
+        "Eficacia es capacidad de lograr objetivos, eficiencia es capacidad de sacar máximo partido de los recursos",
+        "Eficacia es gratuidad, eficiencia es rentabilidad",
+        "Son sinónimos, no hay diferencia"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eficacia es la capacidad de lograr los objetivos, mientras que eficiencia es la capacidad de sacar el máximo partido de los recursos disponibles."
+    },
+    {
+      "question": "En el análisis coste-beneficio, ¿cómo se expresan tanto los costes como los beneficios?",
+      "options": [
+        "Costes en euros, beneficios en unidades de salud",
+        "Ambos en unidades monetarias",
+        "Costes en tiempo, beneficios en dinero",
+        "Ambos en años de vida ganados"
+      ],
+      "correctAnswer": 1,
+      "explanation": "En el análisis coste-beneficio, tanto los costes como los beneficios se expresan en unidades monetarias, permitiendo calcular el beneficio neto por unidad monetaria invertida."
+    },
+    {
+      "question": "¿Qué significa la sigla QALY o AVAC en economía sanitaria?",
+      "options": [
+        "Años de Vida Ajustados por Calidad",
+        "Cantidad de Análisis por Año",
+        "Calidad y Valoración de Atención Clínica",
+        "Cuantificación Anual de Listas de Espera"
+      ],
+      "correctAnswer": 0,
+      "explanation": "QALY (Quality-Adjusted Life Years) o AVAC significa años ganados ajustados por calidad de vida, una unidad que intenta estandarizar los beneficios en salud considerando cantidad y calidad de vida."
+    },
+    {
+      "question": "Verdadero o Falso: El análisis coste-utilidad es el método más antiguo de evaluación económica sanitaria.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 1,
+      "explanation": "Falso. El análisis coste-utilidad es el método más reciente en la evaluación económica sanitaria, desarrollado en un intento de estandarizar las mediciones de beneficios en salud."
+    },
+    {
+      "question": "¿Qué es el coste de oportunidad en economía sanitaria?",
+      "options": [
+        "El precio de los medicamentos innovadores",
+        "El beneficio que podría haberse obtenido si los recursos se hubieran destinado al mejor de sus usos alternativos",
+        "El coste de mantener listas de espera",
+        "El gasto en formación del personal sanitario"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El coste de oportunidad de un procedimiento es el beneficio que podría haberse obtenido si los recursos usados se hubieran destinado al mejor de sus usos alternativos."
+    },
+    {
+      "question": "¿Cuál es uno de los principales problemas de la tecnología sanitaria según el documento?",
+      "options": [
+        "Es demasiado barata y accesible",
+        "No siempre se incorpora al sistema de forma adecuada y puede quedar anticuada antes de ser amortizada",
+        "No existe innovación tecnológica en sanidad",
+        "Solo beneficia a los hospitales privados"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Uno de los aspectos más controvertidos es que los nuevos equipos o técnicas no siempre se incorporan adecuadamente, y la tecnología avanza tan rápidamente que un equipo puede quedar anticuado antes de ser amortizado."
+    },
+    {
+      "question": "¿Qué busca garantizar el principio de equidad en la asignación de recursos sanitarios?",
+      "options": [
+        "Que todos reciban exactamente el mismo tratamiento sin excepciones",
+        "Que las decisiones de asignación sean justas, basadas en protocolos con criterios objetivos",
+        "Que solo los más jóvenes reciban tratamiento",
+        "Que se priorice siempre el menor coste económico"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El criterio para asignar recursos se basa en protocolos que establecen prioridades en base a criterios objetivos, de forma que la decisión sea lo más justa posible, considerando el coste de oportunidad."
+    },
+    {
+      "question": "¿Cuál de estas comisiones hospitalarias vela por una óptima estancia de los pacientes (dieta, horarios, adaptación)?",
+      "options": [
+        "Comisión de dirección",
+        "Comisión de control de calidad",
+        "Comisión de bienestar social",
+        "Comisión de participación hospitalaria"
+      ],
+      "correctAnswer": 2,
+      "explanation": "La comisión de bienestar social es la que vela por una óptima estancia de los pacientes, ocupándose de aspectos como dieta, horario de visitas y adaptación de las habitaciones."
+    },
+    {
+      "question": "Verdadero o Falso: En España, la última modificación de la Ley General de Sanidad publicada es de 2018.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. Según el documento, la Ley General de Sanidad ha sufrido diversas modificaciones publicadas en el BOE, siendo la última de 2018."
+    },
+    {
+      "question": "¿Cuántas unidades territoriales (departamentos de salud) tiene la Comunidad Valenciana?",
+      "options": ["14", "24", "8", "11"],
+      "correctAnswer": 1,
+      "explanation": "La Comunidad Valenciana tiene 24 departamentos de salud, siendo una de las comunidades con más divisiones territoriales sanitarias."
+    },
+    {
+      "question": "Verdadero o Falso: El Principado de Asturias tiene 8 áreas sanitarias.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. Según la tabla del documento, el Principado de Asturias cuenta con 8 áreas sanitarias."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones sobre el modelo sanitario español es CORRECTA?",
+      "options": [
+        "Es un modelo totalmente centralizado gestionado por el Ministerio de Sanidad",
+        "Es un modelo descentralizado donde las comunidades autónomas asumen gestión, financiación y prestación de servicios",
+        "Es un modelo liberal donde cada ciudadano paga directamente todos los servicios",
+        "Es un modelo socialista donde todo es gratuito sin excepciones"
+      ],
+      "correctAnswer": 1,
+      "explanation": "El sistema sanitario español es un modelo descentralizado donde el Estado fija las bases y establece prestaciones mínimas, pero las comunidades autónomas asumen la gestión, financiación y prestación de servicios."
+    },
+    {
+      "question": "Según el documento, ¿qué es un 'área de salud'?",
+      "options": [
+        "Una unidad geográfica y funcional del Sistema Sanitario establecida atendiendo a diversos factores",
+        "El nombre técnico de un hospital de referencia",
+        "Una especialidad médica concreta",
+        "Un tipo de seguro médico privado"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Las áreas de salud son unidades geográficas y funcionales del Sistema Sanitario, demarcaciones geográficas establecidas atendiendo a factores culturales, socioeconómicos, demográficos, de transporte y comunicación."
+    },
+    {
+      "question": "¿Qué debe incluir obligatoriamente toda tarjeta sanitaria individual según la legislación?",
+      "options": [
+        "Fotografía del titular, grupo sanguíneo y alergias",
+        "Datos básicos de identificación, derecho a prestación farmacéutica y servicio de salud responsable",
+        "Historial médico completo y lista de medicamentos",
+        "Solo el nombre y número de la Seguridad Social"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Toda tarjeta sanitaria debe incluir: los datos básicos de identificación del titular, el derecho que le asiste respecto a la prestación farmacéutica, y el servicio de salud o entidad responsable de la asistencia sanitaria."
+    },
+    {
+      "question": "¿Cuál de estas prestaciones está incluida en la cartera común de servicios accesorios?",
+      "options": [
+        "Cirugías de urgencia vital",
+        "Servicios que ayudan en la mejora del estado de salud de personas con enfermedades crónicas, sujetos a aportación",
+        "Todas las vacunas obligatorias",
+        "Atención primaria de salud"
+      ],
+      "correctAnswer": 1,
+      "explanation": "La cartera común de servicios accesorios incluye aquellos servicios que no se consideran esenciales pero ayudan en la mejora del estado de salud y calidad de vida de personas con enfermedades crónicas, y están sujetos a aportación o reembolso."
+    },
+    {
+      "question": "Verdadero o Falso: Los países que potencian la atención primaria tienen poblaciones más saludables.",
+      "options": ["Verdadero", "Falso"],
+      "correctAnswer": 0,
+      "explanation": "Verdadero. El documento afirma que los países que potencian la atención primaria tienen poblaciones más saludables, ya que este nivel lleva la atención lo más cerca posible de la población."
+    },
+    {
+      "question": "¿Cuál de estos colectivos puede ser considerado 'beneficiario' en el sistema sanitario español?",
+      "options": [
+        "Todos los turistas extranjeros",
+        "Descendientes menores de 26 años a cargo de un asegurado",
+        "Solo los mayores de 65 años",
+        "Únicamente los trabajadores activos"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pueden ser beneficiarios: cónyuges, ex cónyuges, descendientes menores de 26 años o descendientes con discapacidad superior al 65% que residan en España y estén a cargo de una persona asegurada."
+    }
+  ]
+}
